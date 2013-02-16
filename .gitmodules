@@ -1,0 +1,21 @@
+[submodule "grains/carpasinivores-limejs"]
+	path = grains/carpasinivores-limejs
+	url = git://github.com/InriaMecsci/carpasinivores-limejs.git
+[submodule "grains/carpasinivores"]
+	path = grains/carpasinivores
+	url = git://github.com/InriaMecsci/carpasinivores.git
+[submodule "grains/machine-turing"]
+	path = grains/machine-turing
+	url = git://github.com/InriaMecsci/machine-turing.git
+[submodule "grains/automate-etats-finis-multiple-3"]
+	path = grains/automate-etats-finis-multiple-3
+	url = git@github.com:InriaMecsci/automate-etats-finis-multiple-3.git
+[submodule "grains/voronoi-diagramme"]
+	path = grains/voronoi-diagramme
+	url = git@github.com:InriaMecsci/voronoi-diagramme.git
+[submodule "grains/crepes"]
+	path = grains/crepes
+	url = git@github.com:InriaMecsci/crepes.git
+[submodule "grains/tetris-botte"]
+	path = grains/tetris-botte
+	url = git@github.com:InriaMecsci/tetris-botte.git
