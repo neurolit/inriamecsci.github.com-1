@@ -12,8 +12,9 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/inria.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -23,24 +24,89 @@
 
         <!-- Add your site or application content here -->
 
-        <h1>Nos grains 3.0</h1>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <a class="brand" href="#">Grains logiciels 3.0</a>
 
-<ul>
-<li>
-<a href="http://inriamecsci.github.com/carpasinivores/">Les carpasinivores</a> (<a href="https://github.com/InriaMecsci/carpasinivores">github</a>)</li>
-<li>
-<a href="http://inriamecsci.github.com/carpasinivores-limejs/grain/">Une autre version des carpasinivores</a> (<a href="https://github.com/InriaMecsci/carpasinivores-limejs">github</a>)</li>
-<li>
-<a href="http://inriamecsci.github.com/tetris-botte/">Le Tetris Botté</a> (<a href="https://github.com/InriaMecsci/tetris-botte">github</a>)</li>
-<li><a href="https://iww.inria.fr/mecsci/grains3.0/methodes_de_tri/grain.html">Méthodes de tri</a></li>
-<li><a href="https://iww.inria.fr/mecsci/grains3.0/turing/turing.html">Machine de Turing</a></li>
-<li><a href="http://dragnalith.alwaysdata.net/grains/">En développement</a></li>
-</ul>
+              <ul class="nav" role="navigation">
+                <li class="active"><a href="">Accueil</a></li>
+                <li>
+                  <a href="https://github.com/InriaMecsci/">Github</a>
+                </li>
+                <li class="dropdown">
+                  <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Grains<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://inriamecsci.github.com/carpasinivores/">Les carpasinivores</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://inriamecsci.github.com/carpasinivores-limejs/grain/">Les autres carpasinivores</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://inriamecsci.github.com/tetris-botte/">Le Tetris botté</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://iww.inria.fr/mecsci/grains3.0/methodes_de_tri/grain.html">Les méthodes de tri</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://iww.inria.fr/mecsci/grains3.0/turing/turing.html">La machine de Turing</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div id="body_container" class="container">
+
+          <div class="row">
+            <div class="span8">
+              <p class="lead">Les grains logiciels 3.0, pour manipuler des objets numériques</p>
+              <ul>
+                <li>
+                  <a href="http://inriamecsci.github.com/carpasinivores/">Les carpasinivores</a> (<a href="https://github.com/InriaMecsci/carpasinivores">github</a>)
+                </li>
+                <li>
+                  <a href="http://inriamecsci.github.com/carpasinivores-limejs/grain/">Une autre version des carpasinivores</a> (<a href="https://github.com/InriaMecsci/carpasinivores-limejs">github</a>)
+                </li>
+                <li>
+                  <a href="http://inriamecsci.github.com/tetris-botte/">Le Tetris Botté</a> (<a href="https://github.com/InriaMecsci/tetris-botte">github</a>)
+                </li>
+                <li>
+                  <a href="https://iww.inria.fr/mecsci/grains3.0/methodes_de_tri/grain.html">Méthodes de tri</a>
+                </li>
+                <li>
+                  <a href="https://iww.inria.fr/mecsci/grains3.0/turing/turing.html">Machine de Turing</a>
+                </li>
+                <li>
+                  <a href="http://dragnalith.alwaysdata.net/grains/">En développement</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="span4">
+              <img class="pull-right" src="img/logo_inria_mecsci.gif" />
+            </div>
+
+          </div>
+
+        </div>
+
+          <footer class="footer">
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+              <div class="navbar-inner">
+                <div class="container">
+                  <ul class="nav inria-top-link-bar pull-right">
+                    <li><a href="mailto:mecsci-contact@inria.fr">Proposé par Inria/Mecsci</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+              $('.dropdown-toggle').dropdown() ;
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
