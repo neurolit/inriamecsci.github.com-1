@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Neurolit -- Lead developer -- @Neurolit
+    Thierry Vieville -- Lead scientist -- @thierry_vieville
+
+# THANKS
+
+	Christine Leininger
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
