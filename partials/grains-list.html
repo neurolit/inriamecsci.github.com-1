@@ -1,0 +1,19 @@
+<div id="body_container" class="container">
+
+  <div class="row">
+    <div class="span8">
+      <p class="lead">Les grains logiciels 3.0, pour manipuler des objets numériques</p>
+      <ul>
+        <li ng-repeat="seed in seeds">
+          <a href="#/grains/{{seed.id}}">{{seed.name}}</a> (<a href="https://github.com/InriaMecsci/{{seed.id}}">github</a>)
+        </li>
+      </ul>
+    </div>
+
+    <div class="span4">
+      <img class="pull-right" src="img/logo_inria_mecsci.gif" />
+    </div>
+
+  </div>
+
+</div>
