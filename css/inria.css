@@ -36,3 +36,8 @@ h1 {
     padding-top:10px;
 }
 
+/* Spécifiques pour Inria Mecsci */
+
+iframe {
+    border-width: 0px;
+}

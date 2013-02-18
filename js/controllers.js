@@ -4,6 +4,11 @@ function SeedListCtrl($scope, $http) {
     });
 }
 
-function SeedDetailCtrl($scope, $routeParams) {
-    $scope.seedId = $routeParams.seedId;
+function SeedDetailCtrl($scope, $routeParams, $http) {
+
+    $scope.seedId = $routeParams.seedId ;
+
+    $http.get('grains/'+$routeParams.seedId+'.json').success(function (data) {
+        $scope.seed = data;
+    });
 }

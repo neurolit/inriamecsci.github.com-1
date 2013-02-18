@@ -2,7 +2,8 @@
 
   <div class="row">
     <div class="span12">
-    	Le grain "<i>{{seedId}}</i>" sera bientôt disponible.
+    	<h2>{{seed.name}}</h2>
+    	<iframe ng-src="grains/{{seedId}}/index.html" width="{{seed.width}}" height="{{seed.height}}" />
     </div>
   </div>
 

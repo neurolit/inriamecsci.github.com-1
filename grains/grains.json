@@ -1,23 +1,26 @@
 [
     {   "id": "carpasinivores",
-        "name": "Les carpasinivores",
-        "url": "http://inriamecsci.github.com/carpasinivores/"},
+        "name": "Les carpasinivores"
+    },
     {   "id": "carpasinivores-limejs",
-        "name": "Les autres carpasinivores",
-        "url": "http://inriamecsci.github.com/carpasinivores-limejs/grain/"},
+        "name": "Les autres carpasinivores"
+    },
     {   "id": "tetris-botte",
-        "name": "Le Tetris Botté",
-        "url": "http://inriamecsci.github.com/tetris-botte/"},
+        "name": "Le Tetris Botté"
+    },
     {   "id": "methodes-tri",
-        "name": "Les méthodes de tri",
-        "url": "https://iww.inria.fr/mecsci/grains3.0/methodes_de_tri/grain.html"},
+        "name": "Les méthodes de tri"
+    },
     {   "id": "machine-turing",
-        "name": "La machine de Turing",
-        "url": "https://iww.inria.fr/mecsci/grains3.0/turing/turing.html"},
+        "name": "La machine de Turing"
+    },
     {   "id": "automate-etats-finis-multiple-3",
-        "name": "Automate à états finis"},
+        "name": "Automate à états finis"
+    },
     {   "id": "voronoi-diagramme",
-        "name": "Diagramme de Voronoï"},
+        "name": "Diagramme de Voronoï"
+    },
     {   "id": "crepes",
-        "name": "Pile de crêpes "}
+        "name": "Pile de crêpes"
+    }
 ]
