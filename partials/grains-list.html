@@ -3,11 +3,7 @@
   <div class="row">
     <div class="span8">
       <p class="lead">Les grains logiciels 3.0, pour manipuler des objets numériques</p>
-      <ul>
-        <li ng-repeat="seed in seeds">
-          <a href="#/grains/{{seed.id}}">{{seed.name}}</a> (<a href="https://github.com/InriaMecsci/{{seed.id}}">github</a>)
-        </li>
-      </ul>
+      <p>Pour l'instant, nous avons {{seeds.length}} grains en stock :</p>
     </div>
 
     <div class="span4">
@@ -15,5 +11,18 @@
     </div>
 
   </div>
+  <div class="row">
+    <br /> <br />
+    <ul class="thumbnails">
+        <li ng-repeat="seed in seeds" class="span4">
+          <div class="thumbnail">
+            <img ng-src="grains/{{seed.id}}.120px.png" alt="{{seed.name}} snapshot">
+            <div class="caption">
+              <p class="text-center"><a href="#/grains/{{seed.id}}">{{seed.name}}</a> (<a href="https://github.com/InriaMecsci/{{seed.id}}">github</a>)</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+    </div>
 
 </div>
