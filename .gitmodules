@@ -19,3 +19,6 @@
 [submodule "grains/tetris-botte"]
 	path = grains/tetris-botte
 	url = git://github.com/InriaMecsci/tetris-botte.git
+[submodule "grains/methodes-tri"]
+	path = grains/methodes-tri
+	url = git://github.com/InriaMecsci/methodes-tri.git
