@@ -8,11 +8,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Inria Mecsci</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 
         <link rel="stylesheet" href="css/inria.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -27,20 +28,29 @@
         <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="SeedListCtrl">
           <div class="navbar-inner">
             <div class="container">
+              <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+
               <a class="brand" href="#">Grains logiciels 3.0</a>
 
-              <ul class="nav" role="navigation">
-                <li class="active"><a href="#/grains">Accueil</a></li>
-                <li>
-                  <a href="https://github.com/InriaMecsci/">Github</a>
-                </li>
-                <li class="dropdown">
-                  <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Grains<b class="caret"></b></a>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                    <li ng-repeat="seed in seeds" role="presentation"><a role="menuitem" tabindex="-1" href="#/grains/{{seed.id}}">{{seed.name}}</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="nav-collapse collapse">
+                <ul class="nav" role="navigation">
+                  <li class="active"><a href="#/grains">Accueil</a></li>
+                  <li>
+                    <a href="https://github.com/InriaMecsci/">Github</a>
+                  </li>
+                  <li class="dropdown">
+                    <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Grains<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                      <li ng-repeat="seed in seeds" role="presentation"><a role="menuitem" tabindex="-1" href="#/grains/{{seed.id}}">{{seed.name}}</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
