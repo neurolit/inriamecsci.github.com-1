@@ -7,37 +7,19 @@ body {
     padding-bottom: 60px;
 }
 
-.tl { text-align: left }
-.tr { text-align: right }
-.tc { text-align: center }
-.tb { text-align: block }
-
-.nav .nav-header {
-    color: #E33729;
-    border-bottom: 1px solid #666666;
-    background:none;
-}
-
 #body_container a {
     color: #E33729;
-}
-
-#menubar {
-    font-weight: bold;
-}
-
-#logo p {
-    color: #E33729;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-h1 {
-    padding-top:10px;
 }
 
 /* Spécifiques pour Inria Mecsci */
 
 iframe {
     border-width: 0px;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
