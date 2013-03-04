@@ -11,6 +11,10 @@ body {
     color: #E33729;
 }
 
+#body_container a.label {
+	color: white;
+}
+
 /* Spécifiques pour Inria Mecsci */
 
 iframe {
