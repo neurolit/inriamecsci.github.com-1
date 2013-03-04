@@ -7,4 +7,26 @@
     </div>
   </div>
 
+  <hr />
+
+  <div class="row">
+  	<div class="span12">
+  		<h2>Fiche signalétique <a href="grains/{{seedId}}/meta.json" class="label">json</a></h2>
+  		<dl class="dl-horizontal">
+        <dt>Nom</dt>
+        <dd>{{seed.name}}</dd>
+        <dt>Github</dt>
+        <dd><a ng-href="http://github.com/InriaMecsci/{{seedId}}">http://github.com/InriaMecsci/{{seedId}}</a></dd>
+        <dt>Pourquoi ?</dt>
+        <dd>{{seed.comment}}</dd>
+        <dt>Auteurs</dt>
+        <dd ng-repeat="author in seed.authors">{{author.name}}</dd>
+        <dt>Liens</dt>
+        <dd ng-repeat="link in seed.links"><a ng-href="{{link.uri}}">{{link.title}}</a></dd>
+        <dt>Licence</dt>
+        <dd ng-repeat="license in seed.licenses"><a ng-href="{{license.uri}}">{{license.name}}</a> ({{license.comment}})</dd>
+  		</dl>
+  	</div>
+  </div>
+
 </div>
