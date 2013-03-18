@@ -14,5 +14,5 @@
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
-    AngularJS 1.0.4
+    AngularJS 1.0.5
     Twitter Bootstrap 2.3.0
