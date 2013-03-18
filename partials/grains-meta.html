@@ -1,0 +1,30 @@
+<div id="body_container" class="container">
+
+  <div class="row">
+  	<div class="span12">
+  		<h2>{{seed.name}} : fiche signalétique <a href="grains/{{seedId}}/meta.json" class="label">json</a></h2>
+  		<dl class="dl-horizontal">
+
+        <dt>Nom</dt>
+        <dd><a href="#!/grains/{{seedId}}">{{seed.name}}</a></dd>
+
+        <dt>Github</dt>
+        <dd><a ng-href="http://github.com/InriaMecsci/{{seedId}}">http://github.com/InriaMecsci/{{seedId}}</a></dd>
+
+        <dt ng-show="seed.comment">Pourquoi ?</dt>
+        <dd>{{seed.comment}}</dd>
+        
+        <dt ng-show="seed.authors.length>0">Auteurs</dt>
+        <dd ng-repeat="author in seed.authors">{{author.name}}</dd>
+        
+        <dt ng-show="seed.links.length>0">Liens</dt>
+        <dd ng-repeat="link in seed.links"><a ng-href="{{link.uri}}">{{link.title}}</a></dd>
+        
+        <dt ng-show="seed.licenses.length>0">Licence</dt>
+        <dd ng-repeat="license in seed.licenses"><a ng-href="{{license.uri}}">{{license.name}}</a> ({{license.comment}})</dd>
+        
+  		</dl>
+  	</div>
+  </div>
+
+</div>
