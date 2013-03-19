@@ -1,14 +1,15 @@
 function SeedListCtrl($scope, $http) {
-    $http.get('grains/grains.json').success(function(data) {
+    "use strict";
+    $http.get('grains/grains.json').success(function (data) {
         $scope.seeds = data;
     });
 }
 
 function SeedDetailCtrl($scope, $routeParams, $http) {
+    "use strict";
+    $scope.seedId = $routeParams.seedId;
 
-    $scope.seedId = $routeParams.seedId ;
-
-    $http.get('grains/'+$routeParams.seedId+'/meta.json').success(function (data) {
+    $http.get('grains/' + $routeParams.seedId + '/meta.json').success(function (data) {
         $scope.seed = data;
     });
 }
