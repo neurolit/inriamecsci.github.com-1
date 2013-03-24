@@ -5,6 +5,7 @@ Voir http://inriamecsci.github.com
 
 ## Code source des grains actuels
 
+* [![Build Status](https://travis-ci.org/InriaMecsci/automate-etats-finis-multiple-3.png?branch=master)](https://travis-ci.org/InriaMecsci/automate-etats-finis-multiple-3) [Automate à états finis : les multiples de 3](http://github.com/InriaMecsci/automate-etats-finis-multiple-3)
 * [![Build Status](https://travis-ci.org/InriaMecsci/carpasinivores.png?branch=master)](https://travis-ci.org/InriaMecsci/carpasinivores) [Carpasinivores](http://github.com/InriaMecsci/carpasinivores)
 * [![Build Status](https://travis-ci.org/InriaMecsci/carpasinivores-limejs.png?branch=master)](https://travis-ci.org/InriaMecsci/carpasinivores-limejs) [Carpasinivores 2](http://github.com/InriaMecsci/carpasinivores-limejs)
 * [![Build Status](https://travis-ci.org/InriaMecsci/crepes.png?branch=master)](https://travis-ci.org/InriaMecsci/crepes) [Pile de crêpes](http://github.com/InriaMecsci/crepes) 
