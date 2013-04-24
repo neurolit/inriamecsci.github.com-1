@@ -25,5 +25,8 @@
     },
     {   "id": "voronoi-jeu",
         "name": "Jeu de Voronoï"
+    },
+    {   "id": "edel",
+        "name": "Jeu d'Edel"
     }
 ]

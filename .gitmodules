@@ -25,3 +25,6 @@
 [submodule "grains/voronoi-jeu"]
 	path = grains/voronoi-jeu
 	url = git://github.com/InriaMecsci/voronoi-jeu.git
+[submodule "grains/edel"]
+	path = grains/edel
+	url = git://github.com/InriaMecsci/edel.git
