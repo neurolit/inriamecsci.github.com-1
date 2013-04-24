@@ -22,5 +22,8 @@
     },
     {   "id": "crepes",
         "name": "Pile de crêpes"
+    },
+    {   "id": "voronoi-jeu",
+        "name": "Jeu de Voronoï"
     }
 ]

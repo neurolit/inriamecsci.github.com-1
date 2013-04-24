@@ -22,3 +22,6 @@
 [submodule "grains/methodes-tri"]
 	path = grains/methodes-tri
 	url = git://github.com/InriaMecsci/methodes-tri.git
+[submodule "grains/voronoi-jeu"]
+	path = grains/voronoi-jeu
+	url = git://github.com/InriaMecsci/voronoi-jeu.git
