@@ -34,3 +34,6 @@
 [submodule "grains/Turing-2D"]
 	path = grains/Turing-2D
 	url = git://github.com/InriaMecsci/Turing-2D.git
+[submodule "grains/codes-secrets"]
+	path = grains/codes-secrets
+	url = git://github.com/InriaMecsci/codes-secrets.git

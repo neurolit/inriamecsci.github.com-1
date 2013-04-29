@@ -34,5 +34,8 @@
     },
     {   "id": "Turing-2D",
         "name": "Simulation d'une machine de Turing 2D"
+    },
+    {   "id": "codes-secrets",
+        "name": "Codes secrets"
     }
 ]
