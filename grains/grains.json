@@ -28,5 +28,9 @@
     },
     {   "id": "edel",
         "name": "Jeu d'Edel"
+    },
+    {
+        "id": "tables-hachage",
+        "name": "Fonctions de hachage"
     }
 ]
