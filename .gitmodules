@@ -31,3 +31,6 @@
 [submodule "grains/tables-hachage"]
 	path = grains/tables-hachage
 	url = git://github.com/InriaMecsci/tables-hachage.git
+[submodule "grains/Turing-2D"]
+	path = grains/Turing-2D
+	url = git://github.com/InriaMecsci/Turing-2D.git

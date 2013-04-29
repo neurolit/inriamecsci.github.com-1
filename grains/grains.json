@@ -32,5 +32,8 @@
     {
         "id": "tables-hachage",
         "name": "Fonctions de hachage"
-    }
+    },
+    {   "id": "Turing-2D",
+        "name": "Simulation d'une machine de Turing 2D"
+    },
 ]
