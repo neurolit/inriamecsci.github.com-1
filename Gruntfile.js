@@ -10,7 +10,8 @@ module.exports = function (grunt) {
 
         jslint: {
             files: [
-                'grains/grains.json'
+                'grains/grains.json',
+                'grains/*/meta.json'
             ],
             options: {
                 failOnError: true

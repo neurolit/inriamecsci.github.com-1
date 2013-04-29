@@ -29,8 +29,7 @@
     {   "id": "edel",
         "name": "Jeu d'Edel"
     },
-    {
-        "id": "tables-hachage",
+    {   "id": "tables-hachage",
         "name": "Fonctions de hachage"
     },
     {   "id": "Turing-2D",
