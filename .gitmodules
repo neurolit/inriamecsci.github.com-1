@@ -37,3 +37,6 @@
 [submodule "grains/codes-secrets"]
 	path = grains/codes-secrets
 	url = git://github.com/InriaMecsci/codes-secrets.git
+[submodule "grains/rubiks-cube"]
+	path = grains/rubiks-cube
+	url = git@github.com:InriaMecsci/rubiks-cube.git

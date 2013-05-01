@@ -29,13 +29,14 @@
     {   "id": "edel",
         "name": "Jeu d'Edel"
     },
-    {   "id": "tables-hachage",
+    {
+        "id": "tables-hachage",
         "name": "Fonctions de hachage"
     },
     {   "id": "Turing-2D",
         "name": "Simulation d'une machine de Turing 2D"
     },
-    {   "id": "codes-secrets",
-        "name": "Codes secrets"
+    {   "id": "rubiks-cube",
+        "name": "Simulation d'un Rubik's cube 2x2"
     }
 ]
