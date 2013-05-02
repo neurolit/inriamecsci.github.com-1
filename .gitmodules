@@ -39,4 +39,4 @@
 	url = git://github.com/InriaMecsci/codes-secrets.git
 [submodule "grains/rubiks-cube"]
 	path = grains/rubiks-cube
-	url = git@github.com:InriaMecsci/rubiks-cube.git
+	url = git://github.com/InriaMecsci/rubiks-cube.git
