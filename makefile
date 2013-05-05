@@ -8,6 +8,5 @@ publish :
             echo ; echo "Update ./grains/$$d" ;\
 	    git submodule update --init $$d ; pushd $$d > /dev/null ; git pull origin master ; popd > /dev/null ;\
 	  fi ; done
-	@-git commit -a -m "mise à jour des grains avec le makefile"
-	@-git push
+	@-echo ; echo "Commit" ; git commit -a -m "mise à jour des grains avec le makefile" ; git push
 
