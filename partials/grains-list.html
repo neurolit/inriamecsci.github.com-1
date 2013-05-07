@@ -1,6 +1,6 @@
-<div id="body_container" class="container">
+<div id="body_container" class="container-fluid">
 
-  <div class="row">
+  <div class="row-fluid">
     <div class="span8">
       <p class="lead">Les grains logiciels 3.0, pour manipuler des objets numériques</p>
     </div>
@@ -10,10 +10,10 @@
     </div>
 
   </div>
-  <div class="row">
-    <br /> <br />
+  <br /> <br />
+  <div ng-repeat="seedsByThree in seedsSlicesByThree" class="row-fluid">
     <ul class="thumbnails">
-        <li ng-repeat="seed in seeds" class="span4">
+        <li ng-repeat="seed in seedsByThree" class="span4">
           <div class="thumbnail">
             <img ng-src="grains/{{seed.id}}/snapshots/120px.png" alt="{{seed.name}} snapshot">
             <div class="caption">
@@ -26,6 +26,6 @@
           </div>
         </li>
     </ul>
-    </div>
+  </div><!-- row-fluid -->
 
 </div>

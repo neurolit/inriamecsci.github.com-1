@@ -20,10 +20,3 @@ body {
 iframe {
     border-width: 0px;
 }
-
-@media (max-width: 979px) {
-  body {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
