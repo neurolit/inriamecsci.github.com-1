@@ -1,5 +1,6 @@
 publish :
 	@echo "make publish"
+	@git pull
 	@-for g in `grep '"id"' grains/grains.json | sed 's/[^:]*[^"]*"\([^"]*\)".*/\1/'` ; do if [ \! -d "grains/$$g" ] ; then \
             echo ; echo "Create ./grains/$$g" ;\
 	    git submodule add git://github.com/InriaMecsci/$$g.git ./grains/$$g ;\
