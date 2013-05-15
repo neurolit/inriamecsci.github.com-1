@@ -40,3 +40,6 @@
 [submodule "grains/rubiks-cube"]
 	path = grains/rubiks-cube
 	url = git://github.com/InriaMecsci/rubiks-cube.git
+[submodule "grains/algo-football"]
+	path = grains/algo-football
+	url = git://github.com/InriaMecsci/algo-football.git

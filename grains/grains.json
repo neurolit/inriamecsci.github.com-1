@@ -41,5 +41,8 @@
     },
     {   "id": "rubiks-cube",
         "name": "Simulation d'un Rubik's cube 2x2"
+    },
+    {   "id": "algo-football",
+        "name": "Un algorithme sur les systèmes d'équations linéaires"
     }
 ]
