@@ -1,48 +1,72 @@
 [
-    {   "id": "carpasinivores",
-        "name": "Les carpasinivores"
+    {
+        "id": "Turing-2D",
+        "name": "Turing-2D",
+        "uri": "https://github.com/InriaMecsci/Turing-2D/wiki"
     },
-    {   "id": "carpasinivores-limejs",
-        "name": "Les carpasinivores 2"
+    {
+        "id": "automate-etats-finis-multiple-3",
+        "name": "Automate à état finis",
+        "uri": "http://fr.wikipedia.org/wiki/Automate_fini"
     },
-    {   "id": "tetris-botte",
-        "name": "Le Tetris Botté"
+    {
+        "id": "carpasinivores-limejs",
+        "name": "Les autres carpasinivores",
+        "uri": "http://inriamecsci.github.com/#!/grains/carpasinivores"
     },
-    {   "id": "methodes-tri",
-        "name": "Les méthodes de tri"
+    {
+        "id": "carpasinivores",
+        "name": "Les carpasinivores",
+        "uri": "https://github.com/InriaMecsci/carpasinivores/wiki"
     },
-    {   "id": "machine-turing",
-        "name": "La machine de Turing"
+    {
+        "id": "codes-secrets",
+        "name": "Codes secrets",
+        "uri": "http://interstices.info/codes-secrets"
     },
-    {   "id": "automate-etats-finis-multiple-3",
-        "name": "Automate à états finis"
+    {
+        "id": "crepes",
+        "name": "Pile de crêpes",
+        "uri": "http://interstices.info/algo-crepes"
     },
-    {   "id": "voronoi-diagramme",
-        "name": "Diagramme de Voronoï"
+    {
+        "id": "edel",
+        "name": "Jeu d'Edel",
+        "uri": "http://interstices.info/jeu-edel"
     },
-    {   "id": "crepes",
-        "name": "Pile de crêpes"
+    {
+        "id": "machine-turing",
+        "name": "La machine de Turing",
+        "uri": "http://interstices.info/machine-turing-interactive"
     },
-    {   "id": "voronoi-jeu",
-        "name": "Jeu de Voronoï"
+    {
+        "id": "methodes-tri",
+        "name": "Les méthodes de tri",
+        "uri": "http://interstices.info/tri"
     },
-    {   "id": "edel",
-        "name": "Jeu d'Edel"
+    {
+        "id": "rubiks-cube",
+        "name": "rubiks-cube",
+        "uri": "http://interstices.info/rubik"
     },
     {
         "id": "tables-hachage",
-        "name": "Fonctions de hachage"
+        "name": "Fonctions de hachage",
+        "uri": "http://interstices.info/hachage"
     },
-    {   "id": "Turing-2D",
-        "name": "Simulation d'une machine de Turing 2D"
+    {
+        "id": "tetris-botte",
+        "name": "Le Tetris Botté",
+        "uri": "http://interstices.info/tetris"
     },
-    {   "id": "codes-secrets",
-        "name": "Codes secrets"
+    {
+        "id": "voronoi-diagramme",
+        "name": "Diagramme de Voronoï",
+        "uri": "http://interstices.info/voronoi"
     },
-    {   "id": "rubiks-cube",
-        "name": "Simulation d'un Rubik's cube 2x2"
-    },
-    {   "id": "algo-football",
-        "name": "Un algorithme sur les systèmes d'équations linéaires"
+    {
+        "id": "voronoi-jeu",
+        "name": "Jeu de Voronoï",
+        "uri": "http://interstices.info/jeu-voronoi"
     }
 ]

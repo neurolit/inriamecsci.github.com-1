@@ -1,6 +1,6 @@
 function SeedListCtrl($scope, $http) {
     "use strict";
-    $http.get('grains/grains.json').success(function (data) {
+    $http.get('grains/index.json').success(function (data) {
         $scope.seeds = data;
         $scope.seedsSlicesByThree = [];
         var firstElement = 0;
