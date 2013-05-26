@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['jslint', 'generer_index_grains']);
 
     // Travis CI task.
-    grunt.registerTask('travis', 'jslint');
+    grunt.registerTask('test', 'jslint');
 
     grunt.registerTask('generer_index_grains', function() {
         var seeds = [] ;
