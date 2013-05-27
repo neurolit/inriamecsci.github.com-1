@@ -5,6 +5,7 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.loadNpmTasks('grunt-jslint'); // load the task
+    grunt.loadNpmTasks('assemble');
 
     grunt.initConfig({
 
@@ -15,12 +16,24 @@ module.exports = function (grunt) {
             options: {
                 failOnError: true
             }
-        }
+        },
 
+        assemble: {
+            README: {
+                options: {
+                    data: 'grains/index.json',
+                    ext: ''
+                },
+                src: './README.md.hbs',
+                dest: './'
+            }
+        }
     });
 
     // default task.
-    grunt.registerTask('default', ['jslint', 'generer_index_grains']);
+    grunt.registerTask('default', ['jslint', 'generer_index_grains', 'generer_README']);
+
+    grunt.registerTask('generer_README', 'assemble:README');
 
     // Travis CI task.
     grunt.registerTask('test', 'jslint');
