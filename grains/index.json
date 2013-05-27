@@ -5,6 +5,11 @@
         "uri": "https://github.com/InriaMecsci/Turing-2D/wiki"
     },
     {
+        "id": "algo-football",
+        "name": "algo-football",
+        "uri": "http://interstices.info/algo-football"
+    },
+    {
         "id": "automate-etats-finis-multiple-3",
         "name": "Automate à état finis",
         "uri": "http://fr.wikipedia.org/wiki/Automate_fini"
