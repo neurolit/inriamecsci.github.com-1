@@ -6,7 +6,7 @@
     },
     {
         "id": "algo-football",
-        "name": "algo-football",
+        "name": "Équations linéaires en jouant",
         "uri": "http://interstices.info/algo-football"
     },
     {
@@ -50,8 +50,13 @@
         "uri": "http://interstices.info/tri"
     },
     {
+        "id": "modele-sir",
+        "name": "Simulation épidémiologique",
+        "uri": "http://interstices.info/modele-sir"
+    },
+    {
         "id": "rubiks-cube",
-        "name": "rubiks-cube",
+        "name": "Piger le Rubik's cube",
         "uri": "http://interstices.info/rubik"
     },
     {
