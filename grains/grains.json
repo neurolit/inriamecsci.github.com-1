@@ -44,5 +44,8 @@
     },
     {   "id": "algo-football",
         "name": "Un algorithme sur les systèmes d'équations linéaires"
+    },
+    {   "id": "modele-sir",
+        "name": "Simulation d'un modèle de propagation d'épidémie"
     }
 ]
