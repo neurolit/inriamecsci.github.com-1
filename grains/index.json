@@ -1,0 +1,77 @@
+[
+    {
+        "id": "Turing-2D",
+        "name": "Turing-2D",
+        "uri": "https://github.com/InriaMecsci/Turing-2D/wiki"
+    },
+    {
+        "id": "algo-football",
+        "name": "algo-football",
+        "uri": "http://interstices.info/algo-football"
+    },
+    {
+        "id": "automate-etats-finis-multiple-3",
+        "name": "Automate à état finis",
+        "uri": "http://fr.wikipedia.org/wiki/Automate_fini"
+    },
+    {
+        "id": "carpasinivores-limejs",
+        "name": "Les autres carpasinivores",
+        "uri": "http://inriamecsci.github.com/#!/grains/carpasinivores"
+    },
+    {
+        "id": "carpasinivores",
+        "name": "Les carpasinivores",
+        "uri": "https://github.com/InriaMecsci/carpasinivores/wiki"
+    },
+    {
+        "id": "codes-secrets",
+        "name": "Codes secrets",
+        "uri": "http://interstices.info/codes-secrets"
+    },
+    {
+        "id": "crepes",
+        "name": "Pile de crêpes",
+        "uri": "http://interstices.info/algo-crepes"
+    },
+    {
+        "id": "edel",
+        "name": "Jeu d'Edel",
+        "uri": "http://interstices.info/jeu-edel"
+    },
+    {
+        "id": "machine-turing",
+        "name": "La machine de Turing",
+        "uri": "http://interstices.info/machine-turing-interactive"
+    },
+    {
+        "id": "methodes-tri",
+        "name": "Les méthodes de tri",
+        "uri": "http://interstices.info/tri"
+    },
+    {
+        "id": "rubiks-cube",
+        "name": "rubiks-cube",
+        "uri": "http://interstices.info/rubik"
+    },
+    {
+        "id": "tables-hachage",
+        "name": "Fonctions de hachage",
+        "uri": "http://interstices.info/hachage"
+    },
+    {
+        "id": "tetris-botte",
+        "name": "Le Tetris Botté",
+        "uri": "http://interstices.info/tetris"
+    },
+    {
+        "id": "voronoi-diagramme",
+        "name": "Diagramme de Voronoï",
+        "uri": "http://interstices.info/voronoi"
+    },
+    {
+        "id": "voronoi-jeu",
+        "name": "Jeu de Voronoï",
+        "uri": "http://interstices.info/jeu-voronoi"
+    }
+]
