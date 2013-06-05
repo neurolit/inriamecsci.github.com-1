@@ -43,3 +43,6 @@
 [submodule "grains/algo-football"]
 	path = grains/algo-football
 	url = git://github.com/InriaMecsci/algo-football.git
+[submodule "grains/modele-sir"]
+	path = grains/modele-sir
+	url = git://github.com/InriaMecsci/modele-sir.git
