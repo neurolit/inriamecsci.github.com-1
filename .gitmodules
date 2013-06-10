@@ -49,3 +49,6 @@
 [submodule "grains/bin-packing"]
 	path = grains/bin-packing
 	url = git://github.com/InriaMecsci/bin-packing
+[submodule "grains/algo-predateurs"]
+	path = grains/algo-predateurs
+	url = git://github.com/InriaMecsci/algo-predateurs.git
