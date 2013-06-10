@@ -9,6 +9,7 @@ Voir http://inriamecsci.github.com
 
 * [![Build Status](https://travis-ci.org/InriaMecsci/Turing-2D.png?branch=master)](https://travis-ci.org/InriaMecsci/Turing-2D) [Turing-2D](http://github.com/InriaMecsci/Turing-2D)
 * [![Build Status](https://travis-ci.org/InriaMecsci/algo-football.png?branch=master)](https://travis-ci.org/InriaMecsci/algo-football) [Équations linéaires en jouant](http://github.com/InriaMecsci/algo-football)
+* [![Build Status](https://travis-ci.org/InriaMecsci/algo-predateurs.png?branch=master)](https://travis-ci.org/InriaMecsci/algo-predateurs) [Simuler un problème de proie/prédateur](http://github.com/InriaMecsci/algo-predateurs)
 * [![Build Status](https://travis-ci.org/InriaMecsci/automate-etats-finis-multiple-3.png?branch=master)](https://travis-ci.org/InriaMecsci/automate-etats-finis-multiple-3) [Automate à état finis](http://github.com/InriaMecsci/automate-etats-finis-multiple-3)
 * [![Build Status](https://travis-ci.org/InriaMecsci/bin-packing.png?branch=master)](https://travis-ci.org/InriaMecsci/bin-packing) [Simulation épidémiologique](http://github.com/InriaMecsci/bin-packing)
 * [![Build Status](https://travis-ci.org/InriaMecsci/carpasinivores-limejs.png?branch=master)](https://travis-ci.org/InriaMecsci/carpasinivores-limejs) [Les autres carpasinivores](http://github.com/InriaMecsci/carpasinivores-limejs)

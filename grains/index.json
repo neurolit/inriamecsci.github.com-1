@@ -10,6 +10,11 @@
         "uri": "http://interstices.info/algo-football"
     },
     {
+        "id": "algo-predateurs",
+        "name": "Simuler un problème de proie/prédateur",
+        "uri": "http://interstices.info/predation"
+    },
+    {
         "id": "automate-etats-finis-multiple-3",
         "name": "Automate à état finis",
         "uri": "http://fr.wikipedia.org/wiki/Automate_fini"
