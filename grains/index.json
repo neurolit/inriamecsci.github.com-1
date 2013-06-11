@@ -15,6 +15,11 @@
         "uri": "http://interstices.info/predation"
     },
     {
+        "id": "alignement-sequences",
+        "name": "Alignement de séquences",
+        "uri": "http://interstices.info/alignement-sequences"
+    },
+    {
         "id": "automate-etats-finis-multiple-3",
         "name": "Automate à état finis",
         "uri": "http://fr.wikipedia.org/wiki/Automate_fini"
@@ -63,6 +68,11 @@
         "id": "modele-sir",
         "name": "Simulation épidémiologique",
         "uri": "http://interstices.info/modele-sir"
+    },
+    {
+        "id": "regions-codantes",
+        "name": "Recherche de régions codantes",
+        "uri": "http://interstices.info/regions-codantes"
     },
     {
         "id": "rubiks-cube",
