@@ -52,3 +52,9 @@
 [submodule "grains/algo-predateurs"]
 	path = grains/algo-predateurs
 	url = git://github.com/InriaMecsci/algo-predateurs.git
+[submodule "grains/regions-codantes"]
+	path = grains/regions-codantes
+	url = git://github.com/InriaMecsci/regions-codantes
+[submodule "grains/alignement-sequences"]
+	path = grains/alignement-sequences
+	url = git://github.com/InriaMecsci/alignement-sequences
