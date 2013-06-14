@@ -58,3 +58,9 @@
 [submodule "grains/alignement-sequences"]
 	path = grains/alignement-sequences
 	url = git://github.com/InriaMecsci/alignement-sequences
+[submodule "grains/algo-ford-fulkerson"]
+	path = grains/algo-ford-fulkerson
+	url = git://github.com/InriaMecsci/algo-ford-fulkerson.git
+[submodule "grains/jeu-de-hamming"]
+	path = grains/jeu-de-hamming
+	url = git://github.com/InriaMecsci/jeu-de-hamming.git
