@@ -10,6 +10,11 @@
         "uri": "http://interstices.info/algo-football"
     },
     {
+        "id": "algo-ford-fulkerson",
+        "name": "Démonstration de l'algorithme de Ford-Fulkerson",
+        "uri": "http://images.math.cnrs.fr/---à venir---"
+    },
+    {
         "id": "algo-predateurs",
         "name": "Simuler un problème de proie/prédateur",
         "uri": "http://interstices.info/predation"
@@ -53,6 +58,11 @@
         "id": "edel",
         "name": "Jeu d'Edel",
         "uri": "http://interstices.info/jeu-edel"
+    },
+    {
+        "id": "jeu-de-hamming",
+        "name": "Jeu de Hamming",
+        "uri": "http://images.math.cnrs.fr/---à venir---"
     },
     {
         "id": "machine-turing",
