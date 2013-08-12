@@ -1,4 +1,10 @@
+default : publish1
+
 publish :
+	node njs/make.njs
+
+
+publish1 :
 	@echo "make publish"
 	@git pull
 	@-for d in grains/* ; do if [ -d $$d ] ; then \
