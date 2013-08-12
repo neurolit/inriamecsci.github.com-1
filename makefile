@@ -3,7 +3,6 @@ default : publish
 publish :
 	node njs/make.njs
 
-
 publish1 :
 	@echo "make publish"
 	@git pull
