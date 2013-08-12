@@ -1,4 +1,4 @@
-default : publish1
+default : publish
 
 publish :
 	node njs/make.njs

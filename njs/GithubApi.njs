@@ -180,6 +180,7 @@ var GithubApi = function() {
     github: github,
     createRepo: createRepo,
     gitRun: gitRun,
-    gitSync: gitSync
+    gitSync: gitSync,
+    seqRun: seqRun
   };
 };
