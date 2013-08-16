@@ -60,6 +60,11 @@
         "uri": "http://interstices.info/algo-crepes"
     },
     {
+        "id": "des-mots-dans-le-cerveau",
+        "name": "creation-ARN",
+        "uri": "--lien vers la documentation principale qui permet de faire fonctionner le grain (ex: https://github.com/InriaMecsci/zero/wiki)--"
+    },
+    {
         "id": "edel",
         "name": "Jeu d'Edel",
         "uri": "http://interstices.info/jeu-edel"
