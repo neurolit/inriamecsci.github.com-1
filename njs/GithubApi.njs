@@ -1,10 +1,15 @@
-/** Encapsulates some interaction with a the github https://github.com.
- * <p>It provides a simplified interface withethe <a href="http://developer.github.com/v3">https://github.com API</a>.
+/** Encapsulates some interaction with a the git-hub https://github.com.
+ * <p>It provides a simplified interface with the <a href="http://developer.github.com/v3">https://github.com API</a>.
  * <p>It uses the <a href="http://ajaxorg.github.io/node-github">node-github</a> module, to be installed using: <pre>sudo npm install -g github</pre></p>
  * <p>It allows to encapsulate both remote and local commands to initialize or synchronize a working-directory.</p>
+ * 
+ * <p>To be used via a construct of the form:<pre>
+ * var fm = require("./GithubApi.njs");
+ * fm.login("me"); // for example
+ *</pre>
  *
- * @class
- * @version 0.0.1 (Mon, 12 Aug 2013 09:29:07 GMT)
+ * @namespace
+ * @version 0.0.1 (Sat, 17 Aug 2013 11:20:53 GMT)
  * @copyright <a href='http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html'>CeCILL-C</a>
  * @author vthierry <thierry.vieville@inria.fr>
  */
@@ -14,7 +19,7 @@ var GithubApi = function() {
   /** The github API interface. 
    * <p>This allows us to access all <a href="http://ajaxorg.github.io/node-github">github API functions</a>.</p>
    */
-  var github = new githubAPI({
+  var api = new githubAPI({
     version: "3.0.0"
   });
   /** Logins to the github server.
@@ -29,7 +34,7 @@ var GithubApi = function() {
         login(username, password);
       });
     } else {
-      github.authenticate({
+      api.authenticate({
         type: "basic",
         username: username,
         password: password
@@ -70,12 +75,12 @@ var GithubApi = function() {
       }
     };
     if (org == user) {
-      github.repos.create({
+      api.repos.create({
         name: name,
         description: description
       }, callback);
     } else {
-      github.repos.createFromOrg({
+      api.repos.createFromOrg({
         org: org,
         name: name,
         description: description
@@ -176,11 +181,12 @@ var GithubApi = function() {
   };
   // Object public exposition
   return {
+    api : api,
     login: login,
-    github: github,
-    createRepo: createRepo,
-    gitRun: gitRun,
     gitSync: gitSync,
+    gitRun: gitRun,
     seqRun: seqRun
   };
-};
+}();
+
+module.exports = GithubApi;

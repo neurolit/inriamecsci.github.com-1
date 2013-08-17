@@ -1,7 +1,6 @@
 // Loads the required nodejs modules
 var fs = require("fs");
-// this is a dirty patch to avoid using modules, corrected soon.
-eval(fs.readFileSync("./njs/GithubApi.njs").toString());
+var ga = require("./GithubApi.njs");
 
 var commands = [];
 commands.push("git pull");
@@ -18,7 +17,6 @@ fs.readdir("grains", function(error, files) {
     commands.push("echo \"commit\"");
     commands.push("git commit -a -m \"mise à jour des grains avec le makefile\"");
     commands.push("git push");
-    var githubapi = new GithubApi();
-    githubapi.seqRun(commands);
+    ga.seqRun(commands);
   }
 });
