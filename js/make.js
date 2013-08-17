@@ -1,6 +1,6 @@
 // Loads the required nodejs modules
 var fs = require("fs");
-var ga = require("./GithubApi.njs");
+var ga = require("./GithubApi.js");
 
 var commands = [];
 commands.push("git pull");

@@ -1,2 +1,2 @@
 publish :
-	node njs/make.njs
+	node js/make.js
