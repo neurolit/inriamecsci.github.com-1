@@ -4,7 +4,8 @@
   "devDependencies": {
     "grunt-jslint": "~0.2.5",
     "grunt": "~0.4.1",
-    "assemble": "~0.3.79"
+    "assemble": "~0.3.79",
+	"github": "~0.1.10"
   },
   "scripts": {
     "test": "grunt test --verbose"
