@@ -123,11 +123,11 @@ var GithubApi = function() {
           console.log(stdout);
         }
         if (error == null) {
-          seqRun(commands.slice(1), next);
         } else {
           console.log("Error with '" + commands[0] + "': " + error);
           console.log(stderr);
         }
+	seqRun(commands.slice(1), next);
       });
     } else {
       if (next) {
