@@ -48,7 +48,7 @@
 	url = git://github.com/InriaMecsci/modele-sir.git
 [submodule "grains/bin-packing"]
 	path = grains/bin-packing
-	url = git://github.com/InriaMecsci/bin-packing
+	url = git://github.com/InriaMecsci/bin-packing.git
 [submodule "grains/algo-predateurs"]
 	path = grains/algo-predateurs
 	url = git://github.com/InriaMecsci/algo-predateurs.git
@@ -57,7 +57,7 @@
 	url = git://github.com/InriaMecsci/regions-codantes
 [submodule "grains/alignement-sequences"]
 	path = grains/alignement-sequences
-	url = git://github.com/InriaMecsci/alignement-sequences
+	url = git://github.com/InriaMecsci/alignement-sequences.git
 [submodule "grains/algo-ford-fulkerson"]
 	path = grains/algo-ford-fulkerson
 	url = git://github.com/InriaMecsci/algo-ford-fulkerson.git

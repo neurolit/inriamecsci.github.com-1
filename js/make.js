@@ -14,9 +14,7 @@ fs.readdir("grains", function(error, files) {
       commands.push("cd ./grains/" +files[i]+" ; git pull origin master");
     }
     commands.push("grunt");
-    commands.push("echo \"commit\"");
-    commands.push("git commit -a -m \"mise à jour des grains avec le makefile\"");
-    commands.push("git push");
+    commands.push("echo \"=====> Faites le commit et le push manuellement !\"");
     ga.seqRun(commands);
   }
 });

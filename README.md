@@ -7,6 +7,16 @@ Voir http://inriamecsci.github.com
 
 ## Code source des grains actuels
 
+* [![Build Status](https://travis-ci.org/InriaMecsci/Turing-2D.png?branch=master)](https://travis-ci.org/InriaMecsci/Turing-2D) [Turing-2D](http://github.com/InriaMecsci/Turing-2D)
+* [![Build Status](https://travis-ci.org/InriaMecsci/algo-football.png?branch=master)](https://travis-ci.org/InriaMecsci/algo-football) [Équations linéaires en jouant](http://github.com/InriaMecsci/algo-football)
+* [![Build Status](https://travis-ci.org/InriaMecsci/algo-ford-fulkerson.png?branch=master)](https://travis-ci.org/InriaMecsci/algo-ford-fulkerson) [Démonstration de l'algorithme de Ford-Fulkerson](http://github.com/InriaMecsci/algo-ford-fulkerson)
+* [![Build Status](https://travis-ci.org/InriaMecsci/algo-predateurs.png?branch=master)](https://travis-ci.org/InriaMecsci/algo-predateurs) [Simuler un problème de proie/prédateur](http://github.com/InriaMecsci/algo-predateurs)
+* [![Build Status](https://travis-ci.org/InriaMecsci/alignement-sequences.png?branch=master)](https://travis-ci.org/InriaMecsci/alignement-sequences) [Alignement de séquences](http://github.com/InriaMecsci/alignement-sequences)
+* [![Build Status](https://travis-ci.org/InriaMecsci/automate-etats-finis-multiple-3.png?branch=master)](https://travis-ci.org/InriaMecsci/automate-etats-finis-multiple-3) [Automate à état finis](http://github.com/InriaMecsci/automate-etats-finis-multiple-3)
+* [![Build Status](https://travis-ci.org/InriaMecsci/bin-packing.png?branch=master)](https://travis-ci.org/InriaMecsci/bin-packing) [Optimisation combinatoire](http://github.com/InriaMecsci/bin-packing)
+* [![Build Status](https://travis-ci.org/InriaMecsci/carpasinivores-limejs.png?branch=master)](https://travis-ci.org/InriaMecsci/carpasinivores-limejs) [Les autres carpasinivores](http://github.com/InriaMecsci/carpasinivores-limejs)
+* [![Build Status](https://travis-ci.org/InriaMecsci/carpasinivores.png?branch=master)](https://travis-ci.org/InriaMecsci/carpasinivores) [Les carpasinivores](http://github.com/InriaMecsci/carpasinivores)
+* [![Build Status](https://travis-ci.org/InriaMecsci/codes-secrets.png?branch=master)](https://travis-ci.org/InriaMecsci/codes-secrets) [Codes secrets](http://github.com/InriaMecsci/codes-secrets)
 * [![Build Status](https://travis-ci.org/InriaMecsci/creation-ARN.png?branch=master)](https://travis-ci.org/InriaMecsci/creation-ARN) [creation-ARN](http://github.com/InriaMecsci/creation-ARN)
 * [![Build Status](https://travis-ci.org/InriaMecsci/crepes.png?branch=master)](https://travis-ci.org/InriaMecsci/crepes) [Pile de crêpes](http://github.com/InriaMecsci/crepes)
 * [![Build Status](https://travis-ci.org/InriaMecsci/des-mots-dans-le-cerveau.png?branch=master)](https://travis-ci.org/InriaMecsci/des-mots-dans-le-cerveau) [des-mots-dans-le-cerveau](http://github.com/InriaMecsci/des-mots-dans-le-cerveau)

@@ -10,11 +10,13 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         jslint: {
-            files: [
-                'grains/*/meta.json'
-            ],
-            options: {
-                failOnError: true
+            all: {
+                src: [
+                    'grains/*/meta.json'
+                ],
+                options: {
+                    failOnError: true
+                }
             }
         },
 
