@@ -1,5 +1,55 @@
 [
     {
+        "id": "Turing-2D",
+        "name": "Turing-2D",
+        "uri": "https://github.com/InriaMecsci/Turing-2D/wiki"
+    },
+    {
+        "id": "algo-football",
+        "name": "Équations linéaires en jouant",
+        "uri": "http://interstices.info/algo-football"
+    },
+    {
+        "id": "algo-ford-fulkerson",
+        "name": "Démonstration de l'algorithme de Ford-Fulkerson",
+        "uri": "http://images.math.cnrs.fr/---à venir---"
+    },
+    {
+        "id": "algo-predateurs",
+        "name": "Simuler un problème de proie/prédateur",
+        "uri": "http://interstices.info/predation"
+    },
+    {
+        "id": "alignement-sequences",
+        "name": "Alignement de séquences",
+        "uri": "http://interstices.info/alignement-sequences"
+    },
+    {
+        "id": "automate-etats-finis-multiple-3",
+        "name": "Automate à état finis",
+        "uri": "http://fr.wikipedia.org/wiki/Automate_fini"
+    },
+    {
+        "id": "bin-packing",
+        "name": "Optimisation combinatoire",
+        "uri": "http://interstices.info/bin-packing"
+    },
+    {
+        "id": "carpasinivores-limejs",
+        "name": "Les autres carpasinivores",
+        "uri": "http://inriamecsci.github.com/#!/grains/carpasinivores"
+    },
+    {
+        "id": "carpasinivores",
+        "name": "Les carpasinivores",
+        "uri": "https://github.com/InriaMecsci/carpasinivores/wiki"
+    },
+    {
+        "id": "codes-secrets",
+        "name": "Codes secrets",
+        "uri": "http://interstices.info/codes-secrets"
+    },
+    {
         "id": "creation-ARN",
         "name": "creation-ARN",
         "uri": "--lien vers la documentation principale qui permet de faire fonctionner le grain (ex: https://github.com/InriaMecsci/zero/wiki)--"
