@@ -35,9 +35,19 @@
         "uri": "http://interstices.info/bin-packing"
     },
     {
+        "id": "carpasinivores-limejs",
+        "name": "Les autres carpasinivores",
+        "uri": "http://inriamecsci.github.com/#!/grains/carpasinivores"
+    },
+    {
         "id": "carpasinivores",
         "name": "Les carpasinivores",
         "uri": "https://github.com/InriaMecsci/carpasinivores/wiki"
+    },
+    {
+        "id": "codes-secrets",
+        "name": "Codes secrets",
+        "uri": "http://interstices.info/codes-secrets"
     },
     {
         "id": "creation-ARN",
