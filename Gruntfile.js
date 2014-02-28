@@ -61,6 +61,9 @@ module.exports = function (grunt) {
             }
         );
         seeds.sort(function (a, b) {
+            // accents are badly sorted by V8 Javascript, nothing to do about that
+            // See https://github.com/joyent/node/issues/4689
+            // Or http://code.google.com/p/v8/issues/detail?id=459
             return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), "fr");
         });
         grunt.file.write("grains/index.json", JSON.stringify(seeds, null, 4));
