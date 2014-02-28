@@ -12,7 +12,8 @@ module.exports = function (grunt) {
         jslint: {
             all: {
                 src: [
-                    'grains/*/meta.json'
+                    'grains/*/meta.json',
+                    'Gruntfile.js'
                 ],
                 options: {
                     failOnError: true
@@ -40,25 +41,28 @@ module.exports = function (grunt) {
     // Travis CI task.
     grunt.registerTask('test', 'jslint');
 
-    grunt.registerTask('generer_index_grains', function() {
-        var seeds = [] ;
+    grunt.registerTask('generer_index_grains', function () {
+        var seeds = [];
         grunt.file.expand('grains/*/meta.json').forEach(
-            function(fileName) {
-                var seedData = grunt.file.readJSON(fileName) ;
-                var seed = {} ;
-                seed['id'] = fileName ;
-                seed['id'] = seed['id'].replace(/^grains\//,'') ;
-                seed['id'] = seed['id'].replace(/\/meta\.json$/,'') ;
-                seed['name'] = seedData['name'] ;
-                if ('link' in seedData) {
-                    seed['uri'] = seedData['link'] ;
+            function (fileName) {
+                var seedData = grunt.file.readJSON(fileName),
+                    seed = {};
+                seed.id = fileName;
+                seed.id = seed.id.replace(/^grains\//, '');
+                seed.id = seed.id.replace(/\/meta\.json$/, '');
+                seed.name = seedData.name;
+                if (seedData.hasOwnProperty('link')) {
+                    seed.uri = seedData.link;
                 } else {
-                    seed['uri'] = seedData['links'][0]['uri'] ;
+                    seed.uri = seedData.links[0].uri;
                 }
-                seeds.push(seed) ;
+                seeds.push(seed);
             }
-        ) ;
-        grunt.file.write("grains/index.json",JSON.stringify(seeds, null, 4)) ;
+        );
+        seeds.sort(function (a, b) {
+            return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), "fr");
+        });
+        grunt.file.write("grains/index.json", JSON.stringify(seeds, null, 4));
     });
 
 };
