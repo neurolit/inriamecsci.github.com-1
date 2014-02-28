@@ -1,3 +1,6 @@
+/*global angular: false */
+/*global SeedListCtrl: false */
+/*global SeedDetailCtrl: false */
 angular.module('grains', []).
     config(function ($routeProvider, $locationProvider) {
         "use strict";

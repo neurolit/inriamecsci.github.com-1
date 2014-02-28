@@ -5,8 +5,8 @@ function SeedListCtrl($scope, $http) {
         $scope.seedsSlicesByThree = [];
         var firstElement = 0;
         while (firstElement < $scope.seeds.length) {
-            $scope.seedsSlicesByThree.push($scope.seeds.slice(firstElement, firstElement + 3)) ;
-            firstElement = firstElement + 3 ;
+            $scope.seedsSlicesByThree.push($scope.seeds.slice(firstElement, firstElement + 3));
+            firstElement = firstElement + 3;
         }
     });
 }

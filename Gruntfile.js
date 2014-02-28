@@ -13,7 +13,8 @@ module.exports = function (grunt) {
             all: {
                 src: [
                     'grains/*/meta.json',
-                    'Gruntfile.js'
+                    'Gruntfile.js',
+                    'js/{app,controllers}.js'
                 ],
                 options: {
                     failOnError: true
