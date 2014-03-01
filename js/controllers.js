@@ -18,4 +18,8 @@ function SeedDetailCtrl($scope, $routeParams, $http) {
     $http.get('grains/' + $routeParams.seedId + '/meta.json').success(function (data) {
         $scope.seed = data;
     });
+
+    $scope.getSeedUrl = function () {
+        return 'grains/' + $scope.seedId + '/index.html';
+    };
 }

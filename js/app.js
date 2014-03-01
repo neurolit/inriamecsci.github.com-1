@@ -1,7 +1,7 @@
 /*global angular: false */
 /*global SeedListCtrl: false */
 /*global SeedDetailCtrl: false */
-angular.module('grains', []).
+angular.module('grains', ['ngRoute']).
     config(function ($routeProvider, $locationProvider) {
         "use strict";
         $routeProvider.
