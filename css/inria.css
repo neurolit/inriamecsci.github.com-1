@@ -4,7 +4,6 @@
 */
 body {
     padding-top: 80px;
-    padding-bottom: 60px;
 }
 
 #body_container a {
@@ -13,6 +12,14 @@ body {
 
 #body_container a.label {
 	color: white;
+}
+
+.footer {
+    padding: 20px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
 }
 
 /* Spécifiques pour Inria Mecsci */
