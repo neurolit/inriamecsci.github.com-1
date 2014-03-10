@@ -1,18 +1,9 @@
-<div id="body_container" class="container-fluid">
+<div id="body_container" class="container">
 
-  <div class="row">
+    <p class="text-center lead">Les grains logiciels 3.0, pour manipuler des objets numériques</p>
 
-    <div class="col-md-8">
-      <p class="lead">Les grains logiciels 3.0, pour manipuler des objets numériques</p>
-    </div>
-
-    <div class="col-md-4 hidden-phone">
-      <img class="pull-right" src="img/inr_logo_cherch_FR_coul.png" />
-    </div>
-
-  </div>
-  <br /> <br />
-  <div ng-repeat="seedsByThree in seedsSlicesByThree" class="row">
+    <br /> <br />
+    <div ng-repeat="seedsByThree in seedsSlicesByThree" class="row">
         <div ng-repeat="seed in seedsByThree" class="col-md-4">
           <div class="thumbnail">
             <img ng-src="grains/{{seed.id}}/snapshots/120px.png" alt="{{seed.name}} snapshot">
@@ -25,6 +16,6 @@
             </div>
           </div>
         </div>
-  </div><!-- row-fluid -->
+    </div><!-- row -->
 
-</div>
+</div><!-- container -->
