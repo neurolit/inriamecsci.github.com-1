@@ -5,14 +5,18 @@
     <br /> <br />
     <div ng-repeat="seedsByThree in seedsSlicesByThree" class="row">
         <div ng-repeat="seed in seedsByThree" class="col-md-4">
-          <div class="thumbnail">
-            <img ng-src="grains/{{seed.id}}/snapshots/120px.png" alt="{{seed.name}} snapshot">
-            <div class="caption">
-              <p class="text-center">
-                <a href="#!/grains/{{seed.id}}">{{seed.name}}</a>
-                <br />
-                (<a href="https://github.com/InriaMecsci/{{seed.id}}">github</a>, <a href="#!/grains/meta/{{seed.id}}">métadonnées</a>, <a href="{{seed.uri}}">documentation</a>)
-              </p>
+          <div class="thumbnail seed_thumbnail">
+            <a href="#!/grains/{{seed.id}}"><img ng-src="grains/{{seed.id}}/snapshots/120px.png" alt="{{seed.name}} snapshot"></a>
+            <div class="seed_description">
+                <p class="text-center">
+                    <strong>{{seed.name}}</strong>
+                </p>
+            </div>
+            <div class="seed_links">
+                <hr />
+                <p class="text-center">
+                    <a href="https://github.com/InriaMecsci/{{seed.id}}">github</a>, <a href="#!/grains/meta/{{seed.id}}">métadonnées</a>, <a href="{{seed.uri}}">documentation</a>
+                </p>
             </div>
           </div>
         </div>
