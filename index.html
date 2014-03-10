@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="vendor/bootstrap-3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
         <link rel="stylesheet" href="css/inria.css">
         <script src="vendor/modernizr-2.6.2.min.js"></script>
@@ -32,12 +33,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="#!/grains">Accueil</a></li>
+                  <li class="active"><a href="#!/grains"><i class="fa fa-home"></i> Accueil</a></li>
                   <li>
-                    <a href="https://github.com/InriaMecsci/">Github</a>
+                    <a href="https://github.com/InriaMecsci/"><i class="fa fa-github"></i> Github</a>
                   </li>
                   <li class="dropdown">
-                    <a ng-cloak href="#" class="dropdown-toggle" data-toggle="dropdown">Grains ({{seeds.length}}) <b class="caret"></b></a>
+                    <a ng-cloak href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-flask"></i> Grains ({{seeds.length}}) <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li ng-cloak ng-repeat="seed in seeds" role="presentation"><a role="menuitem" tabindex="-1" href="#!/grains/{{seed.id}}">{{seed.name}}</a></li>
                     </ul>
