@@ -1,1 +1,1 @@
-exclude: ['bower_components/font-awesome/src']
+exclude: ['src']
