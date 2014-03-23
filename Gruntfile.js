@@ -6,6 +6,9 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-jslint'); // load the task
     grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.initConfig({
 
@@ -31,7 +34,25 @@ module.exports = function (grunt) {
                 src: './README.md.hbs',
                 dest: './'
             }
-        }
+        },
+
+        concat: {
+          css: {
+            src: [
+              'bower_components/bootstrap/dist/css/bootstrap.css',
+              'bower_components/font-awesome/css/font-awesome.css',
+              'css/inria.css'
+            ],
+            dest: 'css/combined.css'
+          },
+        },
+
+        cssmin : {
+          css:{
+            src: 'css/combined.css',
+            dest: 'css/combined.min.css'
+          }
+        },
     });
 
     // default task.
