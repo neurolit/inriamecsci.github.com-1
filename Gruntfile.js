@@ -10,6 +10,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-uncss');
 
     grunt.initConfig({
 
@@ -49,11 +50,11 @@ module.exports = function (grunt) {
         concat: {
             css: {
                 src: [
-                    'bower_components/bootstrap/dist/css/bootstrap.min.css',
-                    'bower_components/font-awesome/css/font-awesome.min.css',
-                    'css/inria.min.css'
+                    'bower_components/bootstrap/dist/css/bootstrap.css',
+                    'bower_components/font-awesome/css/font-awesome.css',
+                    'css/inria.css'
                 ],
-                dest: 'css/combined.min.css'
+                dest: 'css/combined.css'
             },
             app_js: {
                 src: [
@@ -77,9 +78,9 @@ module.exports = function (grunt) {
         },
 
         cssmin : {
-            inria: {
-                src: 'css/inria.css',
-                dest: 'css/inria.min.css'
+            combined: {
+                src: 'css/combined.css',
+                dest: 'css/combined.min.css'
             }
         },
 
@@ -90,13 +91,21 @@ module.exports = function (grunt) {
                 }
             }
         },
+
+        uncss: {
+            combined: {
+                files: {
+                    'css/combined.css': ['index.html', 'partials/grains-detail.html', 'partials/grains-list.html', 'partials/grains-meta.html']
+                }
+            }
+        },
     });
 
     // default task.
     grunt.registerTask('default', ['jslint', 'copy:fonts', 'generer_js', 'generer_css', 'generer_index_grains', 'assemble:README']);
 
     grunt.registerTask('generer_js', ['concat:app_js', 'uglify:app_js', 'concat:js']);
-    grunt.registerTask('generer_css', ['cssmin:inria', 'concat:css']);
+    grunt.registerTask('generer_css', ['concat:css', 'uncss:combined', 'cssmin:combined']);
 
     // Travis CI task.
     grunt.registerTask('test', 'jslint');
