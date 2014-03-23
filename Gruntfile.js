@@ -54,7 +54,7 @@ module.exports = function (grunt) {
                     'bower_components/font-awesome/css/font-awesome.css',
                     'css/inria.css'
                 ],
-                dest: 'css/combined.css'
+                dest: 'css/combined.min.css'
             },
             app_js: {
                 src: [
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
 
         cssmin : {
             combined: {
-                src: 'css/combined.css',
+                src: 'css/combined.min.css',
                 dest: 'css/combined.min.css'
             }
         },
@@ -95,7 +95,10 @@ module.exports = function (grunt) {
         uncss: {
             combined: {
                 files: {
-                    'css/combined.css': ['index.html', 'partials/grains-detail.html', 'partials/grains-list.html', 'partials/grains-meta.html']
+                    'css/combined.min.css': ['index.html', 'partials/grains-detail.html', 'partials/grains-list.html', 'partials/grains-meta.html']
+                },
+                options: {
+                    ignore: [ /dropdown/ ]
                 }
             }
         },
