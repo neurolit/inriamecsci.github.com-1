@@ -6,8 +6,21 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-jslint'); // load the task
     grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.initConfig({
+
+        copy: {
+            fonts: {
+                files: [
+                // includes files within path
+                    { expand: true, cwd: 'bower_components/font-awesome/fonts/', src: [ '*' ], dest: 'fonts/', filter: 'isFile'},
+                ]
+            }
+        },
 
         jslint: {
             all: {
@@ -31,13 +44,59 @@ module.exports = function (grunt) {
                 src: './README.md.hbs',
                 dest: './'
             }
-        }
+        },
+
+        concat: {
+            css: {
+                src: [
+                    'bower_components/bootstrap/dist/css/bootstrap.min.css',
+                    'bower_components/font-awesome/css/font-awesome.min.css',
+                    'css/inria.min.css'
+                ],
+                dest: 'css/combined.min.css'
+            },
+            app_js: {
+                src: [
+                    'js/plugins.js',
+                    'js/main.js',
+                    'js/app.js',
+                    'js/controllers.js'
+                ],
+                dest: 'js/app.combined.js'
+            },
+            js: {
+                src: [
+                    'bower_components/jquery/dist/jquery.min.js',
+                    'bower_components/bootstrap/dist/js/bootstrap.min.js',
+                    'bower_components/angular/angular.min.js',
+                    'bower_components/angular-route/angular-route.min.js',
+                    'js/app.combined.min.js'
+                ],
+                dest: 'js/combined.min.js'
+            }
+        },
+
+        cssmin : {
+            inria: {
+                src: 'css/inria.css',
+                dest: 'css/inria.min.css'
+            }
+        },
+
+        uglify : {
+            app_js: {
+                files: {
+                    'js/app.combined.min.js' : [ 'js/app.combined.js' ]
+                }
+            }
+        },
     });
 
     // default task.
-    grunt.registerTask('default', ['jslint', 'generer_index_grains', 'generer_README']);
+    grunt.registerTask('default', ['jslint', 'copy:fonts', 'generer_js', 'generer_css', 'generer_index_grains', 'assemble:README']);
 
-    grunt.registerTask('generer_README', 'assemble:README');
+    grunt.registerTask('generer_js', ['concat:app_js', 'uglify:app_js', 'concat:js']);
+    grunt.registerTask('generer_css', ['cssmin:inria', 'concat:css']);
 
     // Travis CI task.
     grunt.registerTask('test', 'jslint');
