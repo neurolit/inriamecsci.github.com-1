@@ -11,8 +11,25 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-uncss');
+    grunt.loadNpmTasks('grunt-spritesmith');
 
     grunt.initConfig({
+
+        sprite: {
+            all: {
+                'src': 'grains/*/snapshots/120px.png',
+                'destImg': 'css/snapshots.png',
+                'destCSS': 'css/snapshots.css',
+                'algorithm': 'binary-tree',
+                'cssVarMap': function (sprite) {
+                    // `sprite` has `name`, `image` (full path), `x`, `y`
+                    //   `width`, `height`, `total_width`, `total_height`
+                    // EXAMPLE: Prefix all sprite names with 'sprite-'
+                    var seed = sprite.source_image.split('/')[1];
+                    sprite.name = seed + '-' + sprite.name;
+                }
+            }
+        },
 
         copy: {
             fonts: {
@@ -52,7 +69,8 @@ module.exports = function (grunt) {
                 src: [
                     'bower_components/bootstrap/dist/css/bootstrap.css',
                     'bower_components/font-awesome/css/font-awesome.css',
-                    'css/inria.css'
+                    'css/inria.css',
+                    'css/snapshots.css'
                 ],
                 dest: 'css/combined.min.css'
             },
@@ -108,7 +126,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['jslint', 'copy:fonts', 'generer_js', 'generer_css', 'generer_index_grains', 'assemble:README']);
 
     grunt.registerTask('generer_js', ['concat:app_js', 'uglify:app_js', 'concat:js']);
-    grunt.registerTask('generer_css', ['concat:css', 'uncss:combined', 'cssmin:combined']);
+    grunt.registerTask('generer_css', ['sprite:all', 'concat:css', 'uncss:combined', 'cssmin:combined']);
 
     // Travis CI task.
     grunt.registerTask('test', 'jslint');
