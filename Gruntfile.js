@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             fonts: {
                 files: [
                 // includes files within path
-                    { expand: true, cwd: 'bower_components/font-awesome/fonts/', src: [ '*' ], dest: 'fonts/', filter: 'isFile'},
+                    { expand: true, cwd: 'bower_components/font-awesome/fonts/', src: [ '*' ], dest: 'fonts/', filter: 'isFile'}
                 ]
             }
         },
@@ -101,7 +101,7 @@ module.exports = function (grunt) {
                     ignore: [ /dropdown/ ]
                 }
             }
-        },
+        }
     });
 
     // default task.
