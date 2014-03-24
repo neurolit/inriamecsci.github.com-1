@@ -6,7 +6,7 @@
     <div ng-repeat="seedsByThree in seedsSlicesByThree" class="row">
         <div ng-repeat="seed in seedsByThree" class="col-md-4">
           <div class="thumbnail seed_thumbnail">
-            <a href="#!/grains/{{seed.id}}"><img ng-src="grains/{{seed.id}}/snapshots/120px.png" alt="{{seed.name}} snapshot"></a>
+            <a href="#!/grains/{{seed.id}}" class="icon-{{seed.id}}-120px snapshot"></a>
             <div class="seed_description">
                 <p class="text-center">
                     <strong>{{seed.name}}</strong>
