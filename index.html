@@ -20,7 +20,7 @@
     <div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="SeedListCtrl">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -34,7 +34,7 @@
               <a href="https://github.com/InriaMecsci/"><i class="fa fa-github"></i> Github</a>
             </li>
             <li class="dropdown">
-              <a ng-cloak href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="flask"></i> Grains ({{seeds.length}}) <b class="caret"></b></a>
+              <a class="dropdown-toggle" ng-cloak href="#" data-toggle="dropdown"><i class="flask"></i> Grains ({{seeds.length}}) <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li ng-cloak ng-repeat="seed in seeds" role="presentation"><a role="menuitem" tabindex="-1" href="#!/grains/{{seed.id}}">{{seed.name}}</a></li>
               </ul>
