@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-spritesmith');
+    grunt.loadNpmTasks('grunt-recess');
 
     grunt.initConfig({
 
@@ -28,6 +29,12 @@ module.exports = function (grunt) {
                     var seed = sprite.source_image.split('/')[1];
                     sprite.name = seed + '-' + sprite.name;
                 }
+            }
+        },
+
+        recess: {
+            dist: {
+                src: ['css/inria.css']
             }
         },
 
@@ -125,7 +132,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['jslint', 'copy:fonts', 'generer_js', 'generer_css', 'generer_index_grains', 'assemble:README']);
 
     grunt.registerTask('generer_js', ['concat:app_js', 'uglify:app_js', 'concat:js']);
-    grunt.registerTask('generer_css', ['sprite:all', 'concat:css', 'uncss:combined', 'cssmin:combined']);
+    grunt.registerTask('generer_css', ['recess:dist', 'sprite:all', 'concat:css', 'uncss:combined', 'cssmin:combined']);
 
     // Travis CI task.
     grunt.registerTask('test', 'jslint');
