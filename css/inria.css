@@ -27,7 +27,7 @@ body {
 }
 
 #body_container a {
-    color: #E33729;
+  color: #E33729;
 }
 
 #body_container a.label {
@@ -35,43 +35,42 @@ body {
 }
 
 iframe {
-    border-width: 0px;
+  border-width: 0px;
 }
 
 .seed_thumbnail {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
-    border: 1px solid #CBCBCB;
-    border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #CBCBCB;
+  border-radius: 2px;
 }
 
 .seed_description {
-    margin: 10px 6px 5px;
-    font-size: 13px;
-    line-height: 17px;
-    color: #666;
+  margin: 10px 6px 5px;
+  font-size: 13px;
+  line-height: 17px;
+  color: #666;
 }
 
 .seed_description strong {
-    color: #4D4D4D;
-    font-size: 12px;
+  color: #4D4D4D;
+  font-size: 12px;
 }
 
 .seed_links {
-    font-size: 13px;
-
+  font-size: 13px;
 }
 
 .seed_links hr {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-    display: none !important;
+  display: none !important;
 }
 
 a.snapshot {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
