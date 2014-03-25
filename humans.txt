@@ -13,6 +13,7 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
-    AngularJS 1.0.5
-    Twitter Bootstrap 2.3.0
+    jQuery 2.1.0
+    AngularJS 1.2.14
+    Twitter Bootstrap 3.1.1
+    Bower, GruntJS
