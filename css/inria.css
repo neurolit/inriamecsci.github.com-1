@@ -1,6 +1,6 @@
 /**
 * Feuille de style principale
-* Rouge INRIA : color: #E33729;
+* Rouge INRIA : color: #e33729;
 */
 
 html {
@@ -14,64 +14,69 @@ body {
   margin-bottom: 130px;
 }
 
-#footer {
+.footer {
   position: absolute;
   bottom: 0;
+
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 130px;
+  padding-top: 20px;
+
+  color: #999;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
-  color: #999;
-  padding-top: 20px;
 }
 
-#body_container a {
-    color: #E33729;
+.body-container a {
+  color: #e33729;
 }
 
-#body_container a.label {
+.body-container .label {
 	color: white;
 }
 
 iframe {
-    border-width: 0px;
+  border-width: 0;
 }
 
-.seed_thumbnail {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
-    border: 1px solid #CBCBCB;
-    border-radius: 2px;
+.seed-thumbnail {
+  border: 1px solid #cbcbcb;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
 }
 
-.seed_description {
-    margin: 10px 6px 5px;
-    font-size: 13px;
-    line-height: 17px;
-    color: #666;
+.seed-description {
+  margin: 10px 6px 5px;
+  font-size: 13px;
+  line-height: 17px;
+  color: #666;
 }
 
-.seed_description strong {
-    color: #4D4D4D;
-    font-size: 12px;
+.seed-description strong {
+  font-size: 12px;
+  color: #4d4d4d;
 }
 
-.seed_links {
-    font-size: 13px;
-
+.seed-links {
+  font-size: 13px;
 }
 
-.seed_links hr {
-    margin: 10px 0px;
+.seed-links hr {
+  margin: 10px 0;
 }
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-    display: none !important;
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
 }
 
-a.snapshot {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+.snapshot {
+  display: block;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }

@@ -1,25 +1,25 @@
-<div id="body_container" class="container">
+<div class="body-container container">
 
-    <p class="text-center lead">Les grains logiciels 3.0, pour manipuler des objets numériques</p>
+  <p class="text-center lead">Les grains logiciels 3.0, pour manipuler des objets numériques</p>
 
-    <br /> <br />
-    <div ng-repeat="seedsByThree in seedsSlicesByThree" class="row">
-        <div ng-repeat="seed in seedsByThree" class="col-md-4">
-          <div class="thumbnail seed_thumbnail">
-            <a href="#!/grains/{{seed.id}}" class="icon-{{seed.id}}-120px snapshot"></a>
-            <div class="seed_description">
-                <p class="text-center">
-                    <strong>{{seed.name}}</strong>
-                </p>
-            </div>
-            <div class="seed_links">
-                <hr />
-                <p class="text-center">
-                    <a href="https://github.com/InriaMecsci/{{seed.id}}">github</a>, <a href="#!/grains/meta/{{seed.id}}">métadonnées</a>, <a href="{{seed.uri}}">documentation</a>
-                </p>
-            </div>
-          </div>
+  <br /> <br />
+  <div ng-repeat="seedsByThree in seedsSlicesByThree" class="row">
+    <div ng-repeat="seed in seedsByThree" class="col-md-4">
+      <div class="thumbnail seed-thumbnail">
+        <a href="#!/grains/{{seed.id}}" class="icon-{{seed.id}}-120px snapshot"></a>
+        <div class="seed-description">
+          <p class="text-center">
+            <strong>{{seed.name}}</strong>
+          </p>
         </div>
-    </div><!-- row -->
+        <div class="seed-links">
+          <hr />
+          <p class="text-center">
+            <a href="https://github.com/InriaMecsci/{{seed.id}}">github</a>, <a href="#!/grains/meta/{{seed.id}}">métadonnées</a>, <a href="{{seed.uri}}">documentation</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div><!-- row -->
 
 </div><!-- container -->
