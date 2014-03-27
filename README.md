@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/inriamecsci/inriamecsci.github.com.png?label=ready&title=Ready)](https://waffle.io/inriamecsci/inriamecsci.github.com)
 Site web des grains logiciels de la Médiation Scientifique d'Inria
 ==================================================================
 
