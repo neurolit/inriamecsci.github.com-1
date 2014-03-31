@@ -1,30 +1,38 @@
-/** Encapsulates some interaction with a the git-hub https://github.com.
- * <p>It provides a simplified interface with the <a href="http://developer.github.com/v3">https://github.com API</a>.
- * <p>It uses the <a href="http://ajaxorg.github.io/node-github">node-github</a> module, to be installed using: <pre>sudo npm install -g github</pre></p>
- * <p>It allows to encapsulate both remote and local commands to initialize or synchronize a working-directory.</p>
+/** Encapsulates some interaction with https://github.com.
  * 
- * <p>To be used via a construct of the form:<pre>
- * var fm = require("./GithubApi.njs");
- * fm.login("me"); // for example
- *</pre>
+ * It provides a simplified interface with the [https://github.com API](http://developer.github.com/v3).
+ * 
+ * It allows to encapsulate both remote and local commands to initialize or synchronize a working-directory.
+ * 
+ *####Usage
  *
+ * It uses the [node-github](http://ajaxorg.github.io/node-github) module, to be installed using:
+ *``` 
+ * sudo npm install -g github
+ *``` 
+ * The [source file](./GithubApi.js.zip) is to be used in node.js sources, via a construct of the form:
+ *``` javascript 
+ *	var fm = require("./GithubApi.js");
+ *	fm.login("me"); // for example
+ *```
  * @namespace
- * @version 0.0.1 (Sat, 17 Aug 2013 11:20:53 GMT)
+ * @version 0.0.1 (Sun, 15 Sep 2013 13:31:32 GMT)
  * @copyright <a href='http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html'>CeCILL-C</a>
  * @author vthierry <thierry.vieville@inria.fr>
  */
-var GithubApi = function() {
+var GithubApi = module.exports = function() {
   // Loads the required nodejs modules
   var githubAPI = require("github"), fs = require("fs"), exec = require("child_process").exec;
   /** The github API interface. 
-   * <p>This allows us to access all <a href="http://ajaxorg.github.io/node-github">github API functions</a>.</p>
+   * 
+   * This allows us to access all [github API functions](http://ajaxorg.github.io/node-github).
    */
   var api = new githubAPI({
     version: "3.0.0"
   });
   /** Logins to the github server.
    * @param {string} username The user name.
-   * @param {string} password The user password. If not provided, the password is input via stdin.
+   * @param {string} [password=undefined] The user password. If not provided, the password is input via stdin.
    * @memberof GithubApi
    */
   var login = function(username, password) {
@@ -45,11 +53,11 @@ var GithubApi = function() {
   var user;
   /** Initializes a repository with a default set of source files.
    * @param {string} name The repository name.
-   * @param {string} org The repository organisation, default is the user name.
-   * @param {string} description The respositoty description, default is <tt>name/org</tt>.
-   * @param {string} directory The local directory where to clone the repository, default is <tt>./name</tt>.
-   * @param {object} files The local directory initial files, an object of the form <tt>{ filepath : filebody }</tt>.
-   * @param {function} next  Function called when the operation is completed.
+   * @param {string} [org=name] The repository organisation.
+   * @param {string} [description=name/org] The respositoty description.
+   * @param {string} [directory=./name] The local directory where to clone the repository.
+   * @param {object} files The local directory initial files, an object of the form `{ filepath : filebody }`.
+   * @param {function=} next  Function called when the operation is completed.
    * @memberof GithubApi
    */
   var createRepo = function(name, org, description, directory, files, next) {
@@ -88,46 +96,55 @@ var GithubApi = function() {
     }
   };
   /** Synchronizes a working directory with the remote bundle.
-   * <p>It simply concatenates a <tt>pull ; commit ; push</tt> git command sequence.</p>
-   * @param {string} directory The local directory where to clone the repository, default is <tt>.</tt>
-   * @param {string} message The commit message, default is <tt>"commited from GithubApi"</tt>
-   * @param {function} next  Function called when the operation is completed.
+   * 
+   * It simply concatenates a `pull ; commit ; push` git command sequence.
+   * 
+   * @param {string} [directory=.] The local directory where to clone the repository.
+   * @param {int=1} delay Delay in second.
+   * @param {string} [message="commited from GithubApi"] The commit message.
+   * @param {function=} next  Function called when the operation is completed.
    * @memberof GithubApi
    */
-  var gitSync = function(message, directory, next) {
+  var gitSync = function(directory, delay, message, next) {
     message = message == undefined ? "commited from GithubApi" : message;
-    directory = directory == undefined ? "." : directory;
-    gitRun(directory, [ "pull -q", 'commit -a -m "' + message + '"', "push" ], next);
+    gitRun(directory, delay, [ "pull -q", 'commit -a -m "' + message + '"', "push" ], next);
   };
   /** Runs a sequence of git commands in a given directory.
-   * @param {string} directory The working directory.
-   * @param {array} commands  The git commands, e.g. <tt>[ "status", "add *" ]</tt>, thus without the "git" prefix.
-   * @param {function} next Function called when the operation is completed.
+   * @param {string} [directory=.] The working directory.
+   * @param {int=1} delay Delay in second.
+   * @param {array} commands  The git commands, e.g. `[ "status", "add *" ]`, thus without the "git" prefix.
+   * @param {function=} next Function called when the operation is completed.
    * @memberof GithubApi
    */
-  var gitRun = function(directory, commands, next) {
-    for (var i in commands) {
+  var gitRun = function(directory, delay, commands, next) {
+    directory = directory == undefined ? "." : directory;
+    for (var i = 0; i < commands.length; i++) {
       commands[i] = "cd " + directory + "; git " + commands[i];
     }
-    seqRun(commands, next);
+    seqRun(commands, delay, next);
   };
   /** Runs a sequence of operating system commands.
-   * @param {array} commands  The operating system commands, e.g. <tt>[ "cd <directory> ; grunt", .. ]</tt>.
-   * @param {function} next Function called when the operation is completed.
+   * @param {array} commands  The operating system commands, e.g. `[ "cd <directory> ; grunt", .. ]`.
+   * @param {int=1} delay Delay in second.
+   * @param {function=} next Function called when the operation is completed.
    * @memberof GithubApi
    */
-  var seqRun = function(commands, next) {
+  var seqRun = function(commands, delay, next) {
+    if (delay == undefined) delay = 1;
     if (commands.length > 0) {
       exec(commands[0], function(error, stdout, stderr) {
         if (stdout.trim() != "") {
           console.log(stdout);
         }
+	if (stderr.trim() != "") {
+	  console.log(stderr);
+	}
         if (error == null) {
+	  setTimeout(function() { seqRun(commands.slice(1), next); }, delay * 1000);
         } else {
           console.log("Error with '" + commands[0] + "': " + error);
-          console.log(stderr);
+	  process.exit();
         }
-	seqRun(commands.slice(1), next);
       });
     } else {
       if (next) {
@@ -135,9 +152,9 @@ var GithubApi = function() {
       }
     }
   };
-  // Create the directory of the path its parent if they do not exists
-  var mkdirs = function(path, parent) {
-    if (parent) {
+  // Creates the directory and its parent if required
+  var mkdirs = function(path, isFileNotDir) {
+    if (isFileNotDir) {
       if (path.indexOf("/") != -1) {
         mkdirs(path.substr(0, path.lastIndexOf("/")));
       }
@@ -181,12 +198,10 @@ var GithubApi = function() {
   };
   // Object public exposition
   return {
-    api : api,
+    api: api,
     login: login,
     gitSync: gitSync,
     gitRun: gitRun,
     seqRun: seqRun
   };
 }();
-
-module.exports = GithubApi;

@@ -15,6 +15,6 @@ fs.readdir("grains", function(error, files) {
     }
     commands.push("grunt");
     commands.push("echo \"=====> Faites le commit et le push manuellement !\"");
-    ga.seqRun(commands);
+    ga.seqRun(commands, 5);
   }
 });
