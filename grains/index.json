@@ -1,25 +1,5 @@
 [
     {
-        "id": "Turing-2D",
-        "name": "Turing-2D",
-        "uri": "https://github.com/InriaMecsci/Turing-2D/wiki"
-    },
-    {
-        "id": "algo-football",
-        "name": "Équations linéaires en jouant",
-        "uri": "http://interstices.info/algo-football"
-    },
-    {
-        "id": "algo-ford-fulkerson",
-        "name": "Démonstration de l'algorithme de Ford-Fulkerson",
-        "uri": "http://images.math.cnrs.fr/---à venir---"
-    },
-    {
-        "id": "algo-predateurs",
-        "name": "Simuler un problème de proie/prédateur",
-        "uri": "http://interstices.info/predation"
-    },
-    {
         "id": "alignement-sequences",
         "name": "Alignement de séquences",
         "uri": "http://interstices.info/alignement-sequences"
@@ -30,39 +10,34 @@
         "uri": "http://fr.wikipedia.org/wiki/Automate_fini"
     },
     {
-        "id": "bin-packing",
-        "name": "Optimisation combinatoire",
-        "uri": "http://interstices.info/bin-packing"
-    },
-    {
-        "id": "carpasinivores-limejs",
-        "name": "Les autres carpasinivores",
-        "uri": "http://inriamecsci.github.com/#!/grains/carpasinivores"
-    },
-    {
-        "id": "carpasinivores",
-        "name": "Les carpasinivores",
-        "uri": "https://github.com/InriaMecsci/carpasinivores/wiki"
-    },
-    {
         "id": "codes-secrets",
         "name": "Codes secrets",
         "uri": "http://interstices.info/codes-secrets"
     },
     {
         "id": "creation-ARN",
-        "name": "creation-ARN",
+        "name": "Création ARN",
         "uri": "--lien vers la documentation principale qui permet de faire fonctionner le grain (ex: https://github.com/InriaMecsci/zero/wiki)--"
-    },
-    {
-        "id": "crepes",
-        "name": "Pile de crêpes",
-        "uri": "http://interstices.info/algo-crepes"
     },
     {
         "id": "des-mots-dans-le-cerveau",
-        "name": "des-mots-dans-le-cerveau",
+        "name": "Des mots dans le cerveau",
         "uri": "--lien vers la documentation principale qui permet de faire fonctionner le grain (ex: https://github.com/InriaMecsci/zero/wiki)--"
+    },
+    {
+        "id": "voronoi-diagramme",
+        "name": "Diagramme de Voronoï",
+        "uri": "http://interstices.info/voronoi"
+    },
+    {
+        "id": "algo-ford-fulkerson",
+        "name": "Démonstration de l'algorithme de Ford-Fulkerson",
+        "uri": "http://images.math.cnrs.fr/---à venir---"
+    },
+    {
+        "id": "tables-hachage",
+        "name": "Fonctions de hachage",
+        "uri": "http://interstices.info/hachage"
     },
     {
         "id": "edel",
@@ -75,34 +50,14 @@
         "uri": "http://images.math.cnrs.fr/---à venir---"
     },
     {
+        "id": "voronoi-jeu",
+        "name": "Jeu de Voronoï",
+        "uri": "http://interstices.info/jeu-voronoi"
+    },
+    {
         "id": "machine-turing",
         "name": "La machine de Turing",
         "uri": "http://interstices.info/machine-turing-interactive"
-    },
-    {
-        "id": "methodes-tri",
-        "name": "Les méthodes de tri",
-        "uri": "http://interstices.info/tri"
-    },
-    {
-        "id": "modele-sir",
-        "name": "Simulation épidémiologique",
-        "uri": "http://interstices.info/modele-sir"
-    },
-    {
-        "id": "regions-codantes",
-        "name": "Recherche de régions codantes",
-        "uri": "http://interstices.info/regions-codantes"
-    },
-    {
-        "id": "rubiks-cube",
-        "name": "Piger le Rubik's cube",
-        "uri": "http://interstices.info/rubik"
-    },
-    {
-        "id": "tables-hachage",
-        "name": "Fonctions de hachage",
-        "uri": "http://interstices.info/hachage"
     },
     {
         "id": "tetris-botte",
@@ -110,13 +65,58 @@
         "uri": "http://interstices.info/tetris"
     },
     {
-        "id": "voronoi-diagramme",
-        "name": "Diagramme de Voronoï",
-        "uri": "http://interstices.info/voronoi"
+        "id": "carpasinivores-limejs",
+        "name": "Les autres carpasinivores",
+        "uri": "http://inriamecsci.github.com/#!/grains/carpasinivores"
     },
     {
-        "id": "voronoi-jeu",
-        "name": "Jeu de Voronoï",
-        "uri": "http://interstices.info/jeu-voronoi"
+        "id": "carpasinivores",
+        "name": "Les carpasinivores",
+        "uri": "https://github.com/InriaMecsci/carpasinivores/wiki"
+    },
+    {
+        "id": "methodes-tri",
+        "name": "Les méthodes de tri",
+        "uri": "http://interstices.info/tri"
+    },
+    {
+        "id": "bin-packing",
+        "name": "Optimisation combinatoire",
+        "uri": "http://interstices.info/bin-packing"
+    },
+    {
+        "id": "rubiks-cube",
+        "name": "Piger le Rubik's cube",
+        "uri": "http://interstices.info/rubik"
+    },
+    {
+        "id": "crepes",
+        "name": "Pile de crêpes",
+        "uri": "http://interstices.info/algo-crepes"
+    },
+    {
+        "id": "regions-codantes",
+        "name": "Recherche de régions codantes",
+        "uri": "http://interstices.info/regions-codantes"
+    },
+    {
+        "id": "modele-sir",
+        "name": "Simulation épidémiologique",
+        "uri": "http://interstices.info/modele-sir"
+    },
+    {
+        "id": "algo-predateurs",
+        "name": "Simuler un problème de proie/prédateur",
+        "uri": "http://interstices.info/predation"
+    },
+    {
+        "id": "Turing-2D",
+        "name": "Turing-2D",
+        "uri": "https://github.com/InriaMecsci/Turing-2D/wiki"
+    },
+    {
+        "id": "algo-football",
+        "name": "Équations linéaires en jouant",
+        "uri": "http://interstices.info/algo-football"
     }
 ]
