@@ -122,7 +122,7 @@ module.exports = function (grunt) {
                     'css/combined.min.css': ['index.html', 'partials/grains-detail.html', 'partials/grains-list.html', 'partials/grains-meta.html']
                 },
                 options: {
-                    ignore: [ /dropdown/ ]
+                    ignore: [ /dropdown/, /icon/ ]
                 }
             }
         }
