@@ -143,6 +143,10 @@ module.exports = function (grunt) {
             function (fileName) {
                 var seedData = grunt.file.readJSON(fileName),
                     seed = {};
+                if (seedData.status && seedData.status === 'deprecated') {
+                    // this seed should not be displayed
+                    return;
+                }
                 seed.id = fileName;
                 seed.id = seed.id.replace(/^grains\//, '');
                 seed.id = seed.id.replace(/\/meta\.json$/, '');

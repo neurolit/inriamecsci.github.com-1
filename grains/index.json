@@ -113,10 +113,5 @@
         "id": "Turing-2D",
         "name": "Turing-2D",
         "uri": "https://github.com/InriaMecsci/Turing-2D/wiki"
-    },
-    {
-        "id": "algo-football",
-        "name": "Équations linéaires en jouant",
-        "uri": "http://interstices.info/algo-football"
     }
 ]
