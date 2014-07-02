@@ -80,11 +80,6 @@
         "uri": "http://interstices.info/tri"
     },
     {
-        "id": "bin-packing",
-        "name": "Optimisation combinatoire",
-        "uri": "http://interstices.info/bin-packing"
-    },
-    {
         "id": "rubiks-cube",
         "name": "Piger le Rubik's cube",
         "uri": "http://interstices.info/rubik"
