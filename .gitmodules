@@ -1,72 +1,72 @@
 [submodule "grains/carpasinivores-limejs"]
 	path = grains/carpasinivores-limejs
-	url = git://github.com/InriaMecsci/carpasinivores-limejs.git
+	url = https://github.com/InriaMecsci/carpasinivores-limejs.git
 [submodule "grains/carpasinivores"]
 	path = grains/carpasinivores
-	url = git://github.com/InriaMecsci/carpasinivores.git
+	url = https://github.com/InriaMecsci/carpasinivores.git
 [submodule "grains/machine-turing"]
 	path = grains/machine-turing
-	url = git://github.com/InriaMecsci/machine-turing.git
+	url = https://github.com/InriaMecsci/machine-turing.git
 [submodule "grains/automate-etats-finis-multiple-3"]
 	path = grains/automate-etats-finis-multiple-3
-	url = git://github.com/InriaMecsci/automate-etats-finis-multiple-3.git
+	url = https://github.com/InriaMecsci/automate-etats-finis-multiple-3.git
 [submodule "grains/voronoi-diagramme"]
 	path = grains/voronoi-diagramme
-	url = git://github.com/InriaMecsci/voronoi-diagramme.git
+	url = https://github.com/InriaMecsci/voronoi-diagramme.git
 [submodule "grains/crepes"]
 	path = grains/crepes
-	url = git://github.com/InriaMecsci/crepes.git
+	url = https://github.com/InriaMecsci/crepes.git
 [submodule "grains/tetris-botte"]
 	path = grains/tetris-botte
-	url = git://github.com/InriaMecsci/tetris-botte.git
+	url = https://github.com/InriaMecsci/tetris-botte.git
 [submodule "grains/methodes-tri"]
 	path = grains/methodes-tri
-	url = git://github.com/InriaMecsci/methodes-tri.git
+	url = https://github.com/InriaMecsci/methodes-tri.git
 [submodule "grains/voronoi-jeu"]
 	path = grains/voronoi-jeu
-	url = git://github.com/InriaMecsci/voronoi-jeu.git
+	url = https://github.com/InriaMecsci/voronoi-jeu.git
 [submodule "grains/edel"]
 	path = grains/edel
-	url = git://github.com/InriaMecsci/edel.git
+	url = https://github.com/InriaMecsci/edel.git
 [submodule "grains/tables-hachage"]
 	path = grains/tables-hachage
-	url = git://github.com/InriaMecsci/tables-hachage.git
+	url = https://github.com/InriaMecsci/tables-hachage.git
 [submodule "grains/Turing-2D"]
 	path = grains/Turing-2D
-	url = git://github.com/InriaMecsci/Turing-2D.git
+	url = https://github.com/InriaMecsci/Turing-2D.git
 [submodule "grains/codes-secrets"]
 	path = grains/codes-secrets
-	url = git://github.com/InriaMecsci/codes-secrets.git
+	url = https://github.com/InriaMecsci/codes-secrets.git
 [submodule "grains/rubiks-cube"]
 	path = grains/rubiks-cube
-	url = git://github.com/InriaMecsci/rubiks-cube.git
+	url = https://github.com/InriaMecsci/rubiks-cube.git
 [submodule "grains/algo-football"]
 	path = grains/algo-football
-	url = git://github.com/InriaMecsci/algo-football.git
+	url = https://github.com/InriaMecsci/algo-football.git
 [submodule "grains/modele-sir"]
 	path = grains/modele-sir
-	url = git://github.com/InriaMecsci/modele-sir.git
+	url = https://github.com/InriaMecsci/modele-sir.git
 [submodule "grains/bin-packing"]
 	path = grains/bin-packing
-	url = git://github.com/InriaMecsci/bin-packing.git
+	url = https://github.com/InriaMecsci/bin-packing.git
 [submodule "grains/algo-predateurs"]
 	path = grains/algo-predateurs
-	url = git://github.com/InriaMecsci/algo-predateurs.git
+	url = https://github.com/InriaMecsci/algo-predateurs.git
 [submodule "grains/regions-codantes"]
 	path = grains/regions-codantes
-	url = git://github.com/InriaMecsci/regions-codantes
+	url = https://github.com/InriaMecsci/regions-codantes
 [submodule "grains/alignement-sequences"]
 	path = grains/alignement-sequences
-	url = git://github.com/InriaMecsci/alignement-sequences.git
+	url = https://github.com/InriaMecsci/alignement-sequences.git
 [submodule "grains/algo-ford-fulkerson"]
 	path = grains/algo-ford-fulkerson
-	url = git://github.com/InriaMecsci/algo-ford-fulkerson.git
+	url = https://github.com/InriaMecsci/algo-ford-fulkerson.git
 [submodule "grains/jeu-de-hamming"]
 	path = grains/jeu-de-hamming
-	url = git://github.com/InriaMecsci/jeu-de-hamming.git
+	url = https://github.com/InriaMecsci/jeu-de-hamming.git
 [submodule "grains/creation-ARN"]
 	path = grains/creation-ARN
-	url = git://github.com/InriaMecsci/creation-ARN.git
+	url = https://github.com/InriaMecsci/creation-ARN.git
 [submodule "grains/des-mots-dans-le-cerveau"]
 	path = grains/des-mots-dans-le-cerveau
-	url = git://github.com/InriaMecsci/des-mots-dans-le-cerveau.git
+	url = https://github.com/InriaMecsci/des-mots-dans-le-cerveau.git
