@@ -70,6 +70,3 @@
 [submodule "grains/des-mots-dans-le-cerveau"]
 	path = grains/des-mots-dans-le-cerveau
 	url = git://github.com/InriaMecsci/des-mots-dans-le-cerveau.git
-[submodule "grains/webmobinet"]
-	path = grains/webmobinet
-	url = git://github.com/InriaMecsci/webmobinet.git
