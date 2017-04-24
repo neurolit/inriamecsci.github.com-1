@@ -20,6 +20,11 @@
         "uri": "--lien vers la documentation principale qui permet de faire fonctionner le grain (ex: https://github.com/InriaMecsci/zero/wiki)--"
     },
     {
+        "id": "algo-ford-fulkerson",
+        "name": "Démonstration de l'algorithme de Ford-Fulkerson",
+        "uri": "http://images.math.cnrs.fr/---à venir---"
+    },
+    {
         "id": "des-mots-dans-le-cerveau",
         "name": "Des mots dans le cerveau",
         "uri": "--lien vers la documentation principale qui permet de faire fonctionner le grain (ex: https://github.com/InriaMecsci/zero/wiki)--"
@@ -28,11 +33,6 @@
         "id": "voronoi-diagramme",
         "name": "Diagramme de Voronoï",
         "uri": "http://interstices.info/voronoi"
-    },
-    {
-        "id": "algo-ford-fulkerson",
-        "name": "Démonstration de l'algorithme de Ford-Fulkerson",
-        "uri": "http://images.math.cnrs.fr/---à venir---"
     },
     {
         "id": "tables-hachage",
