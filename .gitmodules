@@ -69,4 +69,4 @@
 	url = https://github.com/InriaMecsci/creation-ARN.git
 [submodule "grains/des-mots-dans-le-cerveau"]
 	path = grains/des-mots-dans-le-cerveau
-	url = git://github.com/InriaMecsci/des-mots-dans-le-cerveau.git
+	url = https://github.com/InriaMecsci/des-mots-dans-le-cerveau.git
