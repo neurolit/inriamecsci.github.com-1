@@ -33,7 +33,6 @@ Voir http://inriamecsci.github.com
 * [![Build Status](https://travis-ci.org/InriaMecsci/algo-predateurs.png?branch=master)](https://travis-ci.org/InriaMecsci/algo-predateurs) [Simuler un problème de proie/prédateur](http://github.com/InriaMecsci/algo-predateurs)
 * [![Build Status](https://travis-ci.org/InriaMecsci/Turing-2D.png?branch=master)](https://travis-ci.org/InriaMecsci/Turing-2D) [Turing-2D](http://github.com/InriaMecsci/Turing-2D)
 
-
 ## Déployer le site chez soi
 
 * Cloner le dépôt
