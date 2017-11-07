@@ -5,22 +5,21 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.loadNpmTasks('grunt-jslint'); // load the task
-    grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-assemble');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-spritesmith');
-    grunt.loadNpmTasks('grunt-recess');
 
     grunt.initConfig({
 
         sprite: {
             all: {
                 'src': 'grains/*/snapshots/120px.png',
-                'destImg': 'css/snapshots.png',
-                'destCSS': 'css/snapshots.css',
+                'dest': 'css/snapshots.png',
+                'destCss': 'css/snapshots.css',
                 'algorithm': 'binary-tree',
                 'cssVarMap': function (sprite) {
                     // `sprite` has `name`, `image` (full path), `x`, `y`
@@ -32,17 +31,11 @@ module.exports = function (grunt) {
             }
         },
 
-        recess: {
-            dist: {
-                src: ['css/inria.css']
-            }
-        },
-
         copy: {
             fonts: {
                 files: [
                 // includes files within path
-                    { expand: true, cwd: 'bower_components/font-awesome/fonts/', src: [ '*' ], dest: 'fonts/', filter: 'isFile'}
+                    {expand: true, cwd: 'bower_components/font-awesome/fonts/', src: ['*'], dest: 'fonts/', filter: 'isFile'}
                 ]
             }
         },
@@ -101,17 +94,17 @@ module.exports = function (grunt) {
             }
         },
 
-        cssmin : {
+        cssmin: {
             combined: {
                 src: 'css/combined.min.css',
                 dest: 'css/combined.min.css'
             }
         },
 
-        uglify : {
+        uglify: {
             app_js: {
                 files: {
-                    'js/app.combined.min.js' : [ 'js/app.combined.js' ]
+                    'js/app.combined.min.js': ['js/app.combined.js']
                 }
             }
         },
@@ -122,7 +115,7 @@ module.exports = function (grunt) {
                     'css/combined.min.css': ['index.html', 'partials/grains-detail.html', 'partials/grains-list.html', 'partials/grains-meta.html']
                 },
                 options: {
-                    ignore: [ /dropdown/, /icon/ ]
+                    ignore: [/dropdown/, /icon/]
                 }
             }
         }
@@ -132,7 +125,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['jslint', 'copy:fonts', 'generer_js', 'generer_css', 'generer_index_grains', 'assemble:README']);
 
     grunt.registerTask('generer_js', ['concat:app_js', 'uglify:app_js', 'concat:js']);
-    grunt.registerTask('generer_css', ['recess:dist', 'sprite:all', 'concat:css', 'uncss:combined', 'cssmin:combined']);
+    grunt.registerTask('generer_css', ['sprite:all', 'concat:css', 'uncss:combined', 'cssmin:combined']);
 
     // Travis CI task.
     grunt.registerTask('test', 'jslint');
